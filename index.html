@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Monpreet Singh - Computational Mechanics & Robotics Researcher | M.Tech, Indian Institute of Technology (IIT) Guwahati. Specializing in Robotic Grasp Force Optimization, Convex Optimization, Deep Learning, and CAD/FEA.">
+  <meta name="keywords" content="Monpreet Singh, IIT Guwahati, Computational Mechanics, Robotics, Grasp Force Optimization, Bilinear Matrix Inequality, ANSYS, SolidWorks, Python, CAD, FEA">
+  <meta name="author" content="Monpreet Singh">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Monpreet Singh | Computational Mechanics & Robotics Portfolio">
+  <meta property="og:description" content="M.Tech Researcher at IIT Guwahati exploring robotic grasp force optimization, computational mechanics, and deep learning.">
+  <meta property="og:image" content="assets/images/hero-bg.jpg">
+
+  <title>Monpreet Singh | Computational Mechanics, Robotics & Optimization</title>
+
+  <!-- Favicon (SVG Monogram) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070b14'/><text x='50%' y='62%' font-size='48' font-weight='bold' font-family='sans-serif' fill='%2300f0ff' text-anchor='middle'>MS</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Particle & Finite Element Node Canvas -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo-link" aria-label="Monpreet Singh Homepage">
+        <div class="logo-badge">MS</div>
+        <div class="logo-text">
+          Monpreet Singh
+          <span>IIT Guwahati</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+          <li><a href="#lab" class="nav-link" id="link-lab">Interactive Lab</a></li>
+          <li><a href="#projects" class="nav-link" id="link-projects">Research & Projects</a></li>
+          <li><a href="#skills" class="nav-link" id="link-skills">Skills & Tools</a></li>
+          <li><a href="#experience" class="nav-link" id="link-experience">Experience</a></li>
+          <li><a href="#education" class="nav-link" id="link-education">Education</a></li>
+          <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions: Theme Toggle & Resume CTA -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme mode" title="Switch Theme">
+          ☀️
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm" id="nav-cta-btn">
+          Connect
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <!-- Left Content -->
+        <div class="hero-content" id="about">
+          <div class="status-badge" id="hero-status-badge">
+            <span class="pulse-dot"></span>
+            Open to Research Collaborations & Core Engineering Roles
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Monpreet Singh</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            Computational Mechanics & Robotics Researcher
+            <span class="inst-tag">IIT Guwahati</span>
+          </div>
+
+          <p class="hero-description">
+            M.Tech scholar in <strong>Computational Mechanics</strong> at the Indian Institute of Technology, Guwahati. 
+            Bridging <em>mathematical optimization</em>, <em>deep learning</em>, and <em>finite element analysis</em> to solve complex robotic grasping, contact mechanics, and mechanical engineering challenges.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+              <span>View Research Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#lab" class="btn btn-secondary" id="btn-hero-lab">
+              <span>Try Interactive Lab</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+            </a>
+            <button class="btn btn-secondary" id="btn-view-cv">
+              <span>📄 View / Print CV</span>
+            </button>
+          </div>
+
+          <!-- Quick Stats Bar -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">90<span>%ile</span></div>
+              <div class="stat-label">GATE 2023</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">IIT<span>G</span></div>
+              <div class="stat-label">M.Tech Scholar</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">80.0<span>%</span></div>
+              <div class="stat-label">B.E. Mechanical</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">10<span>+</span></div>
+              <div class="stat-label">CAD & FEA Tools</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 3D Visual Card -->
+        <div class="hero-visual">
+          <div class="hero-card-wrapper">
+            <!-- Floating Top HUD -->
+            <div class="floating-hud hud-top-right">
+              <div class="hud-label">Research Focus</div>
+              <div class="hud-value">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+                Grasp Optimization
+              </div>
+            </div>
+
+            <!-- Main Interactive Card -->
+            <div class="hero-main-card">
+              <div class="hero-card-image">
+                <img src="assets/images/hero-bg.jpg" alt="Computational Mechanics and Robotics Visual Representation" loading="eager">
+                <div class="hero-card-overlay"></div>
+              </div>
+
+              <div class="hero-card-info">
+                <div class="hero-profile-row">
+                  <div class="profile-avatar-thumb">
+                    <img src="assets/images/avatar.jpg" alt="Monpreet Singh Profile Icon">
+                  </div>
+                  <div class="profile-text-meta">
+                    <h3>Monpreet Singh</h3>
+                    <p>M.Tech, Mechanical Engg. (IITG)</p>
+                  </div>
+                </div>
+
+                <div class="hero-badges-row">
+                  <span class="tech-pill">Bilinear Matrix Inequalities</span>
+                  <span class="tech-pill">Convex Optimization</span>
+                  <span class="tech-pill">ANSYS / SolidEdge</span>
+                  <span class="tech-pill">Python & C++</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Bottom HUD -->
+            <div class="floating-hud hud-bottom-left">
+              <div class="hud-label">Contact Mechanics</div>
+              <div class="hud-value">
+                <span style="color: var(--accent-emerald);">●</span> Friction Cones (SOCP)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FLAGSHIP: INTERACTIVE ROBOTICS & OPTIMIZATION LAB
+         ========================================================================== -->
+    <section class="lab-section" id="lab">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Interactive Simulation</div>
+          <h2 class="section-title">Robotics & Optimization <span class="gradient-text">Virtual Lab</span></h2>
+          <p class="section-desc">
+            Interact with a live simulation of the contact mechanics and friction cone constraints explored in my M.Tech research on <em>Grasp Force Optimization</em>.
+          </p>
+        </div>
+
+        <div class="lab-container">
+          <!-- Canvas Display Column -->
+          <div class="lab-display">
+            <div class="lab-canvas-wrapper">
+              <canvas id="gripper-canvas"></canvas>
+              <div class="canvas-telemetry">
+                <div class="telemetry-status" id="telemetry-status">● FORCE CLOSURE: STABLE</div>
+                <div class="telemetry-math" id="telemetry-math">Ft ≤ μ·Fn</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls Column -->
+          <div class="lab-controls">
+            <div>
+              <div class="controls-header">
+                <h3>Robotic Grasp Force Simulator</h3>
+                <p>Adjust the normal clamping force, contact friction coefficient, and external disturbance to observe the Coulomb friction cone condition in real time.</p>
+              </div>
+
+              <!-- Slider 1: Clamping Force -->
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <span>Normal Clamping Force (Fn):</span>
+                  <span class="slider-val" id="val-force">45 N</span>
+                </div>
+                <input type="range" class="sim-slider" id="slider-force" min="10" max="100" value="45" step="1" aria-label="Normal Clamping Force">
+              </div>
+
+              <!-- Slider 2: Friction Coeff -->
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <span>Friction Coefficient (μ):</span>
+                  <span class="slider-val" id="val-mu">0.45</span>
+                </div>
+                <input type="range" class="sim-slider" id="slider-mu" min="0.10" max="0.90" value="0.45" step="0.05" aria-label="Friction Coefficient">
+              </div>
+
+              <!-- Slider 3: External Load -->
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <span>Disturbance / Payload Weight (Fext):</span>
+                  <span class="slider-val" id="val-load">25 N</span>
+                </div>
+                <input type="range" class="sim-slider" id="slider-load" min="5" max="80" value="25" step="1" aria-label="External Disturbance Load">
+              </div>
+
+              <!-- Live Computed Metrics -->
+              <div class="sim-metrics-grid">
+                <div class="metric-box">
+                  <span class="metric-title">Max Friction Limit</span>
+                  <span class="metric-number" id="metric-fmax">40.5 N</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-title">Friction Cone Angle</span>
+                  <span class="metric-number" id="metric-angle">±24.2°</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-title">Stability Margin</span>
+                  <span class="metric-number" id="metric-margin">+38%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="sim-actions">
+              <button class="btn btn-secondary btn-sm" id="btn-sim-reset">Reset Parameters</button>
+              <button class="btn btn-primary btn-sm" id="btn-sim-mode">Switch to 1D Optimizer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         RESEARCH & PROJECTS SECTION
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Featured Work</div>
+          <h2 class="section-title">Research & <span class="gradient-text">Engineering Projects</span></h2>
+          <p class="section-desc">
+            Rigorous computational engineering spanning mathematical optimization algorithms, robotic manipulation, and finite element modeling.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="robotics">Robotics & Optimization</button>
+          <button class="filter-btn" data-filter="mechanics">Computational Mechanics</button>
+          <button class="filter-btn" data-filter="cad">CAD & Simulation</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Grasp Force Optimization -->
+          <article class="project-card" data-category="robotics mechanics">
+            <div class="project-thumbnail">
+              <img src="assets/images/project-grasp-force.jpg" alt="Grasp Force Optimization with Bilinear Matrix Inequalities" loading="lazy">
+              <div class="project-badge">M.Tech Thesis • IIT Guwahati</div>
+            </div>
+            <div class="project-body">
+              <div class="project-supervisor">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Dr. Shyamanta M Hazarika (Prof & HOD, ME)
+              </div>
+              <h3 class="project-title">Grasp Force Optimization as a Bilinear Matrix Inequality (BMI) Problem</h3>
+              <p class="project-summary">
+                Formulating multi-fingered robotic grasp force optimization as a convex problem incorporating force closure and friction cone constraints. Exploring deep learning models to predict optimal warm-start solutions for bilinear matrix inequalities.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Deep Learning</span>
+                <span class="project-tag">Convex Optimization</span>
+                <span class="project-tag">BMIs</span>
+                <span class="project-tag">Robotics</span>
+                <span class="project-tag">Python</span>
+              </div>
+              <div class="project-footer">
+                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Aug 2024 – Present</span>
+                <a href="#projects" class="learn-more-link open-modal-btn" data-project="grasp-force">
+                  <span>Deep Dive</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Numerical Optimization in C -->
+          <article class="project-card" data-category="robotics mechanics">
+            <div class="project-thumbnail">
+              <img src="assets/images/project-optimization.jpg" alt="Optimization of a function by Direct and Gradient Based Method" loading="lazy">
+              <div class="project-badge">Core Algorithms • IIT Guwahati</div>
+            </div>
+            <div class="project-body">
+              <div class="project-supervisor">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Dr. Deepak Sharma (Professor, Dept. of ME)
+              </div>
+              <h3 class="project-title">Function Optimization via Direct and Gradient-Based Search Methods</h3>
+              <p class="project-summary">
+                Engineered high-efficiency numerical search algorithms in C language. Implemented Bounding Phase Method for initial unimodal bracketing followed by Bisection Method for rapid interval reduction to pinpoint global extrema.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">C Language</span>
+                <span class="project-tag">Bounding Phase</span>
+                <span class="project-tag">Bisection Method</span>
+                <span class="project-tag">Gradient Search</span>
+              </div>
+              <div class="project-footer">
+                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">August 2024</span>
+                <a href="#projects" class="learn-more-link open-modal-btn" data-project="optimization-methods">
+                  <span>Deep Dive</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: CAD & FEA Structural Analysis -->
+          <article class="project-card" data-category="cad mechanics">
+            <div class="project-thumbnail">
+              <img src="assets/images/project-cad-fea.jpg" alt="CAD Modeling and FEA Structural Simulation" loading="lazy">
+              <div class="project-badge">CAD / CAE • Simulation</div>
+            </div>
+            <div class="project-body">
+              <div class="project-supervisor">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Computational Mechanics Lab
+              </div>
+              <h3 class="project-title">CAD Modeling & Finite Element Stress Analysis (FEA)</h3>
+              <p class="project-summary">
+                Comprehensive machine design, 3D modeling, and structural stress evaluation across SolidWorks, Solid Edge, and ANSYS Static Structural. Investigated stress concentration factors, safety margins, and mesh convergence.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">ANSYS Static</span>
+                <span class="project-tag">SolidWorks</span>
+                <span class="project-tag">Solid Edge</span>
+                <span class="project-tag">ANSYS Fluent</span>
+                <span class="project-tag">AutoCAD</span>
+              </div>
+              <div class="project-footer">
+                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Ongoing</span>
+                <a href="#projects" class="learn-more-link open-modal-btn" data-project="cad-fea-analysis">
+                  <span>Deep Dive</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL SKILLS & TOOLS MATRIX
+         ========================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Competencies</div>
+          <h2 class="section-title">Technical Skills & <span class="gradient-text">Software Toolkit</span></h2>
+          <p class="section-desc">
+            A balanced synthesis of mathematical theory, programming proficiency, and industry-standard engineering simulation packages.
+          </p>
+        </div>
+
+        <div class="skills-matrix">
+          <!-- Category 1: Programming & Math -->
+          <div class="skill-category-card">
+            <div class="skill-icon-header">
+              <div class="skill-icon-box">💻</div>
+              <div>
+                <h3>Programming</h3>
+                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Core Languages</span>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Python (NumPy, SciPy, PyTorch)</span>
+                  <span class="skill-level-badge">Advanced</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>C / C++ (Algorithms & Optimization)</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>MATLAB (Matrix Computing & Sim)</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Linux / Bash Shell</span>
+                  <span class="skill-level-badge">Working</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: CAD & CAE Simulation -->
+          <div class="skill-category-card">
+            <div class="skill-icon-header">
+              <div class="skill-icon-box">⚙️</div>
+              <div>
+                <h3>CAD & CAE Software</h3>
+                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Design & Simulation</span>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>SolidWorks</span>
+                  <span class="skill-level-badge">Advanced</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Siemens Solid Edge (TA Certified)</span>
+                  <span class="skill-level-badge">Expert</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>AutoCAD</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>ANSYS Static Structural & Fluent</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Key Academic Engineering Domains -->
+          <div class="skill-category-card">
+            <div class="skill-icon-header">
+              <div class="skill-icon-box">📐</div>
+              <div>
+                <h3>Engineering Domains</h3>
+                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Theoretical Mastery</span>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Computational Mechanics</span>
+                  <span class="skill-level-badge">Specialization</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Optimization Methods in Engineering</span>
+                  <span class="skill-level-badge">Specialization</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Robotics & Robot Applications</span>
+                  <span class="skill-level-badge">Advanced</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Machine Learning & Algorithms</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 82%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Scientific Utilities -->
+          <div class="skill-category-card">
+            <div class="skill-icon-header">
+              <div class="skill-icon-box">📊</div>
+              <div>
+                <h3>Scientific Tools</h3>
+                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Analysis & Visualization</span>
+              </div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Tecplot & GeoGebra</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Advanced Excel & Data Modeling</span>
+                  <span class="skill-level-badge">Advanced</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>MS Visio & Technical Documentation</span>
+                  <span class="skill-level-badge">Advanced</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Git & Version Control</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-progress-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Courses Showcase -->
+        <div class="courses-showcase">
+          <div class="courses-header">
+            <span style="font-size: 1.5rem;">📚</span>
+            <div>
+              <h3>Key Courses & Academic Foundations</h3>
+              <p style="color: var(--text-secondary); font-size: 0.9rem;">Advanced theoretical coursework completed at IIT Guwahati & Assam Engineering College</p>
+            </div>
+          </div>
+
+          <div class="courses-grid">
+            <div class="course-card">
+              <span class="course-icon">✦</span>
+              <span>Advanced Engineering Mathematics</span>
+            </div>
+            <div class="course-card">
+              <span class="course-icon">✦</span>
+              <span>Continuum Mechanics</span>
+            </div>
+            <div class="course-card">
+              <span class="course-icon">✦</span>
+              <span>Numerical Analysis</span>
+            </div>
+            <div class="course-card">
+              <span class="course-icon">✦</span>
+              <span>Optimization Methods in Engineering</span>
+            </div>
+            <div class="course-card">
+              <span class="course-icon">✦</span>
+              <span>Robotics & Robot Applications</span>
+            </div>
+            <div class="course-card">
+              <span class="course-icon">✦</span>
+              <span>Machine Learning & Its Algorithms</span>
+            </div>
+            <div class="course-card">
+              <span class="course-icon">✦</span>
+              <span>Python with Data Structures & Algorithms</span>
+            </div>
+            <div class="course-card">
+              <span class="course-icon">✦</span>
+              <span>Fundamentals of Digital Marketing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE & LEADERSHIP TIMELINE
+         ========================================================================== -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Career & Roles</div>
+          <h2 class="section-title">Teaching, Mentorship & <span class="gradient-text">Leadership</span></h2>
+          <p class="section-desc">
+            Proven track record of mentorship, classroom instruction, and organizational responsibility.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline 1: Teaching Assistant IIT Guwahati -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Teaching Assistant (ME215: Machine Drawing)</h3>
+                  <div class="timeline-org">Indian Institute of Technology, Guwahati</div>
+                </div>
+                <span class="timeline-date">Aug 2024 – Present</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Guided undergraduate engineering students in mastering <strong>Siemens Solid Edge</strong> CAD software for machine drafting and mechanical drawing tasks.</li>
+                <li>Conducted interactive laboratory sessions, addressing CAD geometry errors, dimensioning standards, and assembly troubleshooting.</li>
+                <li>Systematically evaluated lab assignments and provided constructive technical feedback to enhance student design accuracy.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline 2: Peer Mentor Saathi Cell -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Peer Mentor — Saathi Counselling Cell</h3>
+                  <div class="timeline-org">IIT Guwahati</div>
+                </div>
+                <span class="timeline-date">2024</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Provided one-on-one academic and campus orientation mentorship for newly joined postgraduate freshers.</li>
+                <li>Conducted peer support initiatives fostering mental health awareness, stress management, and research acclimation.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline 3: National Level Quiz Organizer -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Organising Member — National Level Quiz Competition</h3>
+                  <div class="timeline-org">Assam Engineering College</div>
+                </div>
+                <span class="timeline-date">Feb 2019</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Managed logistics, participant registrations, and technical coordination for a multi-institution competitive quiz.</li>
+                <li>Coordinated team logistics and stage management, ensuring seamless event execution.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline 4: NCC & Sainik School Leadership -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">NCC Cadet & Sainik School Leadership</h3>
+                  <div class="timeline-org">Sainik School Goalpara & NCC</div>
+                </div>
+                <span class="timeline-date">2010 – 2016</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Secured <strong>"A" Grade</strong> in both NCC Certificate A & B Examinations.</li>
+                <li>Participated in prestigious All India Trekking Expedition and National Adventure Programme (Grade "A", Pachmarhi).</li>
+                <li>1st Position in 4 x 400m Relay, Top 5 in Cross Country 8km, and Obstacle Course finalist.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION & ACHIEVEMENTS SECTION
+         ========================================================================== -->
+    <section class="edu-achieve-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Credentials</div>
+          <h2 class="section-title">Education & <span class="gradient-text">Honors</span></h2>
+          <p class="section-desc">
+            Academic milestones from premier engineering institutions and competitive national examinations.
+          </p>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Left: Education -->
+          <div class="edu-column">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              Academic Background
+            </h3>
+
+            <div class="edu-card">
+              <h4 class="edu-degree">M.Tech in Computational Mechanics</h4>
+              <div class="edu-inst">Indian Institute of Technology (IIT), Guwahati</div>
+              <div class="edu-score-row">
+                <span>CGPA: 6.82 (Current)</span>
+                <span>2023 – Present</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <h4 class="edu-degree">B.E. in Mechanical Engineering</h4>
+              <div class="edu-inst">Assam Engineering College, Guwahati</div>
+              <div class="edu-score-row">
+                <span>Score: 80.00%</span>
+                <span>2017 – 2021</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <h4 class="edu-degree">Senior Secondary (CBSE)</h4>
+              <div class="edu-inst">Sainik School, Goalpara</div>
+              <div class="edu-score-row">
+                <span>Score: 87.20%</span>
+                <span>2016</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <h4 class="edu-degree">Secondary School (CBSE)</h4>
+              <div class="edu-inst">Sainik School, Goalpara</div>
+              <div class="edu-score-row">
+                <span>Score: 89.30%</span>
+                <span>2014</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Key Honors & Key Courses -->
+          <div class="achieve-column">
+            <h3>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              Achievements & Honors
+            </h3>
+
+            <div class="achieve-card">
+              <div class="achieve-badge-row">
+                <div class="achieve-icon">🏆</div>
+                <div>
+                  <h4 class="achieve-title">GATE 2023 Qualified</h4>
+                  <div class="achieve-desc">Secured <strong>90 Percentile</strong> in National Graduate Aptitude Test in Engineering.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="achieve-card">
+              <div class="achieve-badge-row">
+                <div class="achieve-icon">🎖️</div>
+                <div>
+                  <h4 class="achieve-title">National Cyber Olympiad</h4>
+                  <div class="achieve-desc">Certificate of Excellence for securing <strong>23rd rank</strong> across North East India.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="achieve-card">
+              <div class="achieve-badge-row">
+                <div class="achieve-icon">🎖️</div>
+                <div>
+                  <h4 class="achieve-title">NCC 'A' Grade (Certificate A & B)</h4>
+                  <div class="achieve-desc">Secured top grade in National Cadet Corps evaluation along with National Adventure Programme (Pachmarhi).</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="achieve-card">
+              <div class="achieve-badge-row">
+                <div class="achieve-icon">🤝</div>
+                <div>
+                  <h4 class="achieve-title">Ranbhoomi Impact League</h4>
+                  <div class="achieve-desc">Helped raise funds for Hero Ranbhoomi Impact League, IIM Indore & HERO Group (2018).</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Get in Touch</div>
+          <h2 class="section-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+          <p class="section-desc">
+            Interested in discussing computational mechanics, robotic grasp optimization, or engineering opportunities? Feel free to reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Quick Copy -->
+          <div class="contact-info-col">
+            <h3>Contact Information</h3>
+            <p>
+              I am based at IIT Guwahati, Assam, India. Whether you have questions regarding my research or want to discuss full-time roles, I welcome your message.
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Academic Email -->
+              <div class="contact-detail-card">
+                <div class="contact-card-left">
+                  <div class="contact-card-icon">🎓</div>
+                  <div>
+                    <div class="contact-card-title">Academic Email</div>
+                    <a href="mailto:s.monpreet@iitg.ac.in" class="contact-card-value">s.monpreet@iitg.ac.in</a>
+                  </div>
+                </div>
+                <button class="copy-btn copy-data-btn" data-copy="s.monpreet@iitg.ac.in" title="Copy Academic Email">Copy</button>
+              </div>
+
+              <!-- Personal Email -->
+              <div class="contact-detail-card">
+                <div class="contact-card-left">
+                  <div class="contact-card-icon">✉️</div>
+                  <div>
+                    <div class="contact-card-title">Personal Email</div>
+                    <a href="mailto:singhmomnpreet064@gmail.com" class="contact-card-value">singhmomnpreet064@gmail.com</a>
+                  </div>
+                </div>
+                <button class="copy-btn copy-data-btn" data-copy="singhmomnpreet064@gmail.com" title="Copy Personal Email">Copy</button>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-detail-card">
+                <div class="contact-card-left">
+                  <div class="contact-card-icon">📞</div>
+                  <div>
+                    <div class="contact-card-title">Phone</div>
+                    <a href="tel:+919864748082" class="contact-card-value">+91-9864748082</a>
+                  </div>
+                </div>
+                <button class="copy-btn copy-data-btn" data-copy="+919864748082" title="Copy Phone">Copy</button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-detail-card">
+                <div class="contact-card-left">
+                  <div class="contact-card-icon">💼</div>
+                  <div>
+                    <div class="contact-card-title">LinkedIn Profile</div>
+                    <a href="https://www.linkedin.com/in/singh5164" target="_blank" rel="noopener noreferrer" class="contact-card-value">linkedin.com/in/singh5164</a>
+                  </div>
+                </div>
+                <a href="https://www.linkedin.com/in/singh5164" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Open LinkedIn Profile">Visit ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Message Form -->
+          <div class="contact-form-col">
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="sender-name" class="form-label">Your Name</label>
+                <input type="text" id="sender-name" class="form-input" placeholder="e.g. Dr. Jane Doe / Hiring Manager" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email" class="form-label">Your Email</label>
+                <input type="email" id="sender-email" class="form-input" placeholder="e.g. name@organization.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-subject" class="form-label">Subject</label>
+                <input type="text" id="sender-subject" class="form-input" placeholder="e.g. Research Collaboration / Job Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message" class="form-label">Message</label>
+                <textarea id="sender-message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btn-submit-contact">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="nav-logo">
+          <div class="logo-badge">MS</div>
+          <div class="logo-text">
+            Monpreet Singh
+            <span>IIT Guwahati • Computational Mechanics</span>
+          </div>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/singh5164" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:singhmomnpreet064@gmail.com" class="social-icon-btn" aria-label="Personal Email" title="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+          <a href="tel:+919864748082" class="social-icon-btn" aria-label="Phone" title="Call">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Monpreet Singh. Designed with precision for Computational Mechanics & Engineering.
+        </div>
+        <div>
+          <a href="#hero" style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.85rem;">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DIALOG (PROJECT DEEP DIVE)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">✕</button>
+      <div class="modal-content-inner" id="modal-body-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Core Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/simulator.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
