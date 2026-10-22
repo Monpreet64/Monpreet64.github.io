@@ -2,7 +2,7 @@
    MONPREET SINGH - ACADEMIC PORTFOLIO STYLESHEET
    Ph.D. Scholar | Industrial & Systems Engineering | IIT Kharagpur
    Standard Academic Style: High Readability, Clean Typography, Scholar Palette
-   Refined Line and Paragraph Alignment with Optical Balance
+   Microsoft Word Style Justified Text for Clean Academic Flow
    ========================================================================== */
 
 /* --- GOOGLE FONTS IMPORT --- */
@@ -119,7 +119,27 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-heading);
 }
 
-p, li {
+/* ==========================================================================
+   PARAGRAPH JUSTIFICATION (MICROSOFT WORD STYLE JUSTIFIED TEXT)
+   ========================================================================== */
+p,
+.bio-paragraph,
+.project-abstract p,
+.section-intro,
+.info-callout p,
+.institution-details p,
+.research-area-desc,
+.modal-dialog p,
+.modal-content-inner p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  text-wrap: pretty;
+}
+
+li {
   text-wrap: pretty;
 }
 
@@ -182,7 +202,6 @@ a:hover {
   max-width: 76ch;
   margin-bottom: 36px;
   line-height: 1.75;
-  text-wrap: pretty;
 }
 
 /* ==========================================================================
@@ -581,7 +600,7 @@ a:hover {
   gap: 10px;
 }
 
-/* Right Bio Content with Perfect Paragraph Alignment */
+/* Right Bio Content with Justified Microsoft Word Style Paragraphs */
 .profile-bio-content {
   display: flex;
   flex-direction: column;
@@ -622,7 +641,6 @@ a:hover {
   line-height: 1.8;
   margin-bottom: 18px;
   max-width: 74ch;
-  text-wrap: pretty;
 }
 
 .bio-paragraph strong {
@@ -705,7 +723,6 @@ a:hover {
   font-size: 0.95rem;
   color: var(--text-secondary);
   line-height: 1.68;
-  text-wrap: pretty;
 }
 
 /* ==========================================================================
@@ -790,7 +807,6 @@ a:hover {
 
 .institution-details p {
   margin-bottom: 8px;
-  text-wrap: pretty;
 }
 
 .institution-details p:last-child {
@@ -840,7 +856,6 @@ a:hover {
   font-size: 0.925rem;
   color: var(--text-secondary);
   line-height: 1.68;
-  text-wrap: pretty;
 }
 
 /* ==========================================================================
@@ -957,7 +972,6 @@ a:hover {
 
 .project-abstract p {
   margin-bottom: 10px;
-  text-wrap: pretty;
 }
 
 .project-abstract p:last-child {
