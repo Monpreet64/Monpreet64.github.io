@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectDetails = {
     'leaf-spring': {
       title: 'Design and Fatigue Failure Analysis of a Leaf Spring using ANSYS',
-      institution: 'Assam Engineering College, Guwahati',
+      institution: 'Assam Engineering College, Guwahati (Assam Science and Technology University)',
       type: 'B.E. Final Year Capstone Project',
       image: 'assets/images/project-leaf-spring.jpg',
       tools: ['ANSYS Workbench', 'Static Structural FEA', 'ANSYS Fatigue Tool', 'SolidWorks', 'AutoCAD'],
@@ -102,14 +102,14 @@ document.addEventListener('DOMContentLoaded', () => {
           <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--text-heading); margin-bottom: 8px;">
             1. Problem Statement & Motivation
           </h4>
-          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; margin-bottom: 14px; text-wrap: pretty;">
+          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; margin-bottom: 14px;">
             Multi-leaf springs serve as the fundamental suspension and shock-damping component in automotive and commercial freight vehicles. During service operation, leaf springs are subjected to fluctuating and cyclic dynamic loads induced by road surface irregularities, bumps, and varying payload distributions. These cyclic stresses often lead to micro-crack propagation, localized plastic deformation, and catastrophic fatigue failure before the intended structural design life is reached.
           </p>
 
           <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--text-heading); margin-top: 20px; margin-bottom: 8px;">
             2. CAD Modeling & Boundary Conditions
           </h4>
-          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; margin-bottom: 12px; text-wrap: pretty;">
+          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; margin-bottom: 12px;">
             A semi-elliptic leaf spring assembly consisting of a master leaf with rolled eye bushings, graduated leaves, and center rebound bolt was modeled in 3D using SolidWorks and imported into ANSYS Workbench:
           </p>
           <ul style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.75; padding-left: 20px; margin-bottom: 16px;">
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--text-heading); margin-top: 20px; margin-bottom: 8px;">
             3. Finite Element Stress & Fatigue Evaluation
           </h4>
-          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; margin-bottom: 12px; text-wrap: pretty;">
+          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; margin-bottom: 12px;">
             Static structural simulations were executed to evaluate:
           </p>
           <ul style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.75; padding-left: 20px; margin-bottom: 16px;">
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--text-heading); margin-top: 20px; margin-bottom: 8px;">
             4. Key Conclusions
           </h4>
-          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; text-wrap: pretty;">
+          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75;">
             The computational analysis verified that optimizing leaf thickness taper and incorporating parabolic graduated profiles significantly reduces localized peak stress concentrations, thereby enhancing total fatigue life and preventing premature suspension failure.
           </p>
         </div>
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--text-heading); margin-bottom: 8px;">
             1. Algorithmic Overview in Pure C
           </h4>
-          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; margin-bottom: 14px; text-wrap: pretty;">
+          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; margin-bottom: 14px;">
             Engineered standalone numerical search algorithms in pure ANSI C to eliminate library overhead, investigate numerical round-off dynamics, and benchmark convergence speed across non-linear unconstrained mathematical functions.
           </p>
 
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--text-heading); margin-top: 20px; margin-bottom: 8px;">
             3. Results & Convergence Benchmarking
           </h4>
-          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; text-wrap: pretty;">
+          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75;">
             Validated against standard benchmark test functions (Rosenbrock parabolic valleys, unimodal polynomial functions). Demonstrated robust convergence within tight numerical tolerance while maintaining zero memory leaks and safe pointer arithmetic.
           </p>
         </div>
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--text-heading); margin-bottom: 8px;">
             1. Scope of Investigation
           </h4>
-          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; margin-bottom: 14px; text-wrap: pretty;">
+          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.75; margin-bottom: 14px;">
             Comprehensive mechanical design, 3D modeling, and finite element structural simulations evaluating mechanical parts, structural brackets, and assembly components under static and cyclic loading conditions.
           </p>
 
@@ -280,10 +280,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
               <thead>
                 <tr style="text-align: left; border-bottom: 1px solid var(--border-color); color: var(--text-muted);">
-                  <th style="padding: 6px 0;">Degree / Qualification</th>
-                  <th style="padding: 6px;">Institution / University</th>
-                  <th style="padding: 6px;">Score / Mode</th>
-                  <th style="padding: 6px; text-align: right;">Year</th>
+                  <th style="padding: 8px 0;">Degree / Qualification</th>
+                  <th style="padding: 8px;">Institution / University</th>
+                  <th style="padding: 8px; text-align: right;">Score / Performance</th>
                 </tr>
               </thead>
               <tbody>
@@ -292,30 +291,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     Ph.D. in Industrial and Systems Engineering
                   </td>
                   <td style="padding: 10px;">Indian Institute of Technology (IIT) Kharagpur</td>
-                  <td style="padding: 10px; font-weight: 600; color: var(--primary-navy);">
+                  <td style="padding: 10px; text-align: right; font-weight: 600; color: var(--primary-navy);">
                     GATE 2026 Qualified (Direct Ph.D. Entry)
                   </td>
-                  <td style="padding: 10px; text-align: right; font-family: var(--font-mono);">July 2026 – Present</td>
                 </tr>
                 <tr style="border-bottom: 1px solid var(--border-color);">
                   <td style="padding: 10px 0; font-weight: 600; color: var(--text-heading);">
                     Bachelor of Engineering (B.E.) in Mechanical Engineering
                   </td>
-                  <td style="padding: 10px;">Assam Engineering College, Guwahati</td>
-                  <td style="padding: 10px;">80.00% (First Class)</td>
-                  <td style="padding: 10px; text-align: right; font-family: var(--font-mono);">2017 – 2021</td>
+                  <td style="padding: 10px;">Assam Engineering College, Guwahati (Assam Science and Technology University)</td>
+                  <td style="padding: 10px; text-align: right; font-family: var(--font-mono);">80.00% (First Class)</td>
                 </tr>
                 <tr style="border-bottom: 1px solid var(--border-color);">
                   <td style="padding: 10px 0;">Senior Secondary (CBSE Class XII)</td>
                   <td style="padding: 10px;">Sainik School, Goalpara</td>
-                  <td style="padding: 10px;">87.20%</td>
-                  <td style="padding: 10px; text-align: right; font-family: var(--font-mono);">2016</td>
+                  <td style="padding: 10px; text-align: right; font-family: var(--font-mono);">87.20%</td>
                 </tr>
                 <tr>
                   <td style="padding: 10px 0;">Secondary School (CBSE Class X)</td>
                   <td style="padding: 10px;">Sainik School, Goalpara</td>
-                  <td style="padding: 10px;">89.30%</td>
-                  <td style="padding: 10px; text-align: right; font-family: var(--font-mono);">2014</td>
+                  <td style="padding: 10px; text-align: right; font-family: var(--font-mono);">89.30%</td>
                 </tr>
               </tbody>
             </table>
@@ -390,8 +385,8 @@ document.addEventListener('DOMContentLoaded', () => {
               <li><strong>GATE 2023 Qualified:</strong> 90 Percentile in Mechanical Engineering.</li>
               <li><strong>National Cyber Olympiad:</strong> 23rd Rank across North East India (Certificate of Excellence).</li>
               <li><strong>National Cadet Corps (NCC):</strong> 'A' Grade in Certificate A & B; All India Trekking Expedition & National Adventure Programme (Pachmarhi, Grade 'A').</li>
-              <li><strong>Organizing Member:</strong> National Level Quiz Competition, Assam Engineering College (2019).</li>
-              <li><strong>Fundraiser & Volunteer:</strong> Ranbhoomi Impact League, IIM Indore & HERO Group (2018).</li>
+              <li><strong>Organizing Member:</strong> National Level Quiz Competition, Assam Engineering College.</li>
+              <li><strong>Fundraiser & Volunteer:</strong> Ranbhoomi Impact League, IIM Indore & HERO Group.</li>
             </ul>
           </div>
         </div>

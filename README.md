@@ -12,14 +12,14 @@ Personal academic portfolio website showcasing doctoral research background, cap
 
 ## 🏛️ Academic Profile Summary
 
-- **Current Status**: Doctor of Philosophy (Ph.D.) Scholar (Enrolled July 2026 – Present)
+- **Current Status**: Doctor of Philosophy (Ph.D.) Research Scholar
 - **Institution**: Indian Institute of Technology (IIT) Kharagpur, West Bengal, India
 - **Department**: Department of Industrial and Systems Engineering
 - **Supervisors**:
   - **Supervisor**: Prof. Mamata Jenamani (Professor, Dept. of Industrial and Systems Engineering)
   - **Co-Supervisor**: Prof. Jitendra Kumar Jha (Professor, Dept. of Industrial and Systems Engineering)
 - **Admission Mode**: Direct Ph.D. entry through **GATE 2026**
-- **Undergraduate Degree**: Bachelor of Engineering (B.E.) in Mechanical Engineering, Assam Engineering College (Score: **80.00%**, First Class)
+- **Undergraduate Degree**: Bachelor of Engineering (B.E.) in Mechanical Engineering, Assam Engineering College (Assam Science and Technology University) (Score: **80.00%**, First Class)
 - **B.E. Capstone Project**: *"Design and Fatigue Failure Analysis of a Leaf Spring using ANSYS"*
 
 ---
