@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Monpreet Singh - Computational Mechanics & Robotics Researcher | M.Tech, Indian Institute of Technology (IIT) Guwahati. Specializing in Robotic Grasp Force Optimization, Convex Optimization, Deep Learning, and CAD/FEA.">
-  <meta name="keywords" content="Monpreet Singh, IIT Guwahati, Computational Mechanics, Robotics, Grasp Force Optimization, Bilinear Matrix Inequality, ANSYS, SolidWorks, Python, CAD, FEA">
+  <meta name="description" content="Monpreet Singh - Ph.D. Research Scholar in the Department of Industrial and Systems Engineering at the Indian Institute of Technology (IIT) Kharagpur under Prof. Mamata Jenamani and Prof. Jitendra Kumar Jha. Enrolled July 2026 via GATE 2026 (Score: 381).">
+  <meta name="keywords" content="Monpreet Singh, IIT Kharagpur, Industrial and Systems Engineering, Mamata Jenamani, Jitendra Kumar Jha, GATE 2026, Leaf Spring ANSYS, Finite Element Analysis, Optimization, Assam Engineering College">
   <meta name="author" content="Monpreet Singh">
 
   <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Monpreet Singh | Computational Mechanics & Robotics Portfolio">
-  <meta property="og:description" content="M.Tech Researcher at IIT Guwahati exploring robotic grasp force optimization, computational mechanics, and deep learning.">
-  <meta property="og:image" content="assets/images/hero-bg.jpg">
+  <meta property="og:title" content="Monpreet Singh | Ph.D. Scholar, Industrial & Systems Engineering, IIT Kharagpur">
+  <meta property="og:description" content="Ph.D. Research Scholar at IIT Kharagpur in Industrial & Systems Engineering under Prof. Mamata Jenamani and Prof. Jitendra Kumar Jha.">
+  <meta property="og:image" content="assets/images/project-leaf-spring.jpg">
 
-  <title>Monpreet Singh | Computational Mechanics, Robotics & Optimization</title>
+  <title>Monpreet Singh | Ph.D. Scholar, Industrial & Systems Engineering, IIT Kharagpur</title>
 
-  <!-- Favicon (SVG Monogram) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070b14'/><text x='50%' y='62%' font-size='48' font-weight='bold' font-family='sans-serif' fill='%2300f0ff' text-anchor='middle'>MS</text></svg>">
+  <!-- Favicon (Academic Monogram) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230b3c61'/><text x='50%' y='64%' font-size='46' font-weight='bold' font-family='Georgia, serif' fill='%23ffffff' text-anchor='middle'>MS</text></svg>">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Background Particle & Finite Element Node Canvas -->
-  <canvas id="particle-canvas" aria-hidden="true"></canvas>
-
   <!-- ==========================================================================
-       NAVIGATION BAR
+       ACADEMIC NAVIGATION BAR
        ========================================================================== -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#hero" class="nav-logo" id="nav-logo-link" aria-label="Monpreet Singh Homepage">
+      <a href="#about" class="nav-logo" id="nav-logo-link" aria-label="Monpreet Singh Homepage">
         <div class="logo-badge">MS</div>
         <div class="logo-text">
           Monpreet Singh
-          <span>IIT Guwahati</span>
+          <span>IIT Kharagpur</span>
         </div>
       </a>
 
@@ -43,23 +40,23 @@
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="#about" class="nav-link" id="link-about">About</a></li>
-          <li><a href="#lab" class="nav-link" id="link-lab">Interactive Lab</a></li>
-          <li><a href="#projects" class="nav-link" id="link-projects">Research & Projects</a></li>
-          <li><a href="#skills" class="nav-link" id="link-skills">Skills & Tools</a></li>
-          <li><a href="#experience" class="nav-link" id="link-experience">Experience</a></li>
           <li><a href="#education" class="nav-link" id="link-education">Education</a></li>
+          <li><a href="#research" class="nav-link" id="link-research">Research Interests</a></li>
+          <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+          <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+          <li><a href="#honors" class="nav-link" id="link-honors">Honors & Awards</a></li>
           <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
         </ul>
       </nav>
 
-      <!-- Actions: Theme Toggle & Resume CTA -->
+      <!-- Actions: CV & Theme Toggle -->
       <div class="nav-actions">
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme mode" title="Switch Theme">
-          ☀️
+        <button class="btn btn-academic-sm" id="btn-view-cv" title="View Curriculum Vitae">
+          📄 CV
         </button>
-        <a href="#contact" class="btn btn-primary btn-sm" id="nav-cta-btn">
-          Connect
-        </a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme mode" title="Switch Theme">
+          🌙
+        </button>
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
           <span></span>
           <span></span>
@@ -71,110 +68,226 @@
 
   <main>
     <!-- ==========================================================================
-         HERO SECTION
+         ACADEMIC PROFILE & ABOUT SECTION
          ========================================================================== -->
-    <section class="hero" id="hero">
-      <div class="container hero-grid">
-        <!-- Left Content -->
-        <div class="hero-content" id="about">
-          <div class="status-badge" id="hero-status-badge">
-            <span class="pulse-dot"></span>
-            Open to Research Collaborations & Core Engineering Roles
+    <section class="profile-section" id="about">
+      <div class="container profile-grid">
+        <!-- Sidebar / Profile Card -->
+        <aside class="profile-card">
+          <div class="profile-photo-wrapper">
+            <img src="assets/images/avatar.jpg" alt="Monpreet Singh - Ph.D. Scholar at IIT Kharagpur" class="profile-photo">
           </div>
 
-          <h1 class="hero-title">
-            Hi, I'm <span class="gradient-text">Monpreet Singh</span>
-          </h1>
+          <h1 class="profile-name">Monpreet Singh</h1>
+          <p class="profile-title">Ph.D. Research Scholar</p>
 
-          <div class="hero-subtitle">
-            Computational Mechanics & Robotics Researcher
-            <span class="inst-tag">IIT Guwahati</span>
+          <div class="affiliation-block">
+            <div class="affil-dept">Department of Industrial and Systems Engineering</div>
+            <div class="affil-inst">Indian Institute of Technology Kharagpur</div>
+            <div class="affil-loc">Kharagpur, West Bengal 721302, India</div>
           </div>
 
-          <p class="hero-description">
-            M.Tech scholar in <strong>Computational Mechanics</strong> at the Indian Institute of Technology, Guwahati. 
-            Bridging <em>mathematical optimization</em>, <em>deep learning</em>, and <em>finite element analysis</em> to solve complex robotic grasping, contact mechanics, and mechanical engineering challenges.
-          </p>
+          <!-- Supervision Info -->
+          <div class="supervision-box">
+            <div class="supervision-title">Doctoral Supervision</div>
+            <div class="supervisor-item">
+              <span class="sup-label">Supervisor:</span>
+              <span class="sup-name">Prof. Mamata Jenamani</span>
+            </div>
+            <div class="supervisor-item">
+              <span class="sup-label">Co-Supervisor:</span>
+              <span class="sup-name">Prof. Jitendra Kumar Jha</span>
+            </div>
+          </div>
 
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
-              <span>View Research Projects</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </a>
-            <a href="#lab" class="btn btn-secondary" id="btn-hero-lab">
-              <span>Try Interactive Lab</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
-            </a>
-            <button class="btn btn-secondary" id="btn-view-cv">
-              <span>📄 View / Print CV</span>
+          <!-- Academic Contact Details -->
+          <div class="contact-links-list">
+            <div class="contact-link-row">
+              <span class="contact-icon" title="Institute Email">🏛️</span>
+              <div class="contact-text-group">
+                <span class="contact-label">Institute Email</span>
+                <a href="mailto:s.monpreet26@kgpian.iitkgp.ac.in" class="contact-val">s.monpreet26@kgpian.iitkgp.ac.in</a>
+              </div>
+            </div>
+
+            <div class="contact-link-row">
+              <span class="contact-icon" title="Personal Email">✉️</span>
+              <div class="contact-text-group">
+                <span class="contact-label">Personal Email</span>
+                <a href="mailto:singhmomnpreet064@gmail.com" class="contact-val">singhmomnpreet064@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-link-row">
+              <span class="contact-icon" title="Phone">📞</span>
+              <div class="contact-text-group">
+                <span class="contact-label">Phone</span>
+                <a href="tel:+919864748082" class="contact-val">+91-9864748082</a>
+              </div>
+            </div>
+
+            <div class="contact-link-row">
+              <span class="contact-icon" title="LinkedIn Profile">💼</span>
+              <div class="contact-text-group">
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/singh5164" target="_blank" rel="noopener noreferrer" class="contact-val">linkedin.com/in/singh5164</a>
+              </div>
+            </div>
+
+            <div class="contact-link-row">
+              <span class="contact-icon" title="GitHub">🐙</span>
+              <div class="contact-text-group">
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/Monpreet64" target="_blank" rel="noopener noreferrer" class="contact-val">github.com/Monpreet64</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile Actions -->
+          <div class="profile-actions">
+            <button class="btn btn-academic btn-block" id="btn-hero-cv">
+              <span>View Curriculum Vitae (CV)</span>
             </button>
+            <a href="#contact" class="btn btn-academic-secondary btn-block">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+        </aside>
+
+        <!-- Right: Biography & Summary -->
+        <div class="profile-bio-content">
+          <div class="academic-badge-row">
+            <span class="badge-academic">IIT Kharagpur</span>
+            <span class="badge-academic">Ph.D. Scholar (Enrolled July 2026)</span>
+            <span class="badge-academic">Direct Entry via GATE 2026</span>
           </div>
 
-          <!-- Quick Stats Bar -->
-          <div class="hero-stats">
-            <div class="stat-item">
-              <div class="stat-number">90<span>%ile</span></div>
-              <div class="stat-label">GATE 2023</div>
+          <h2 class="bio-heading">Biography & Academic Overview</h2>
+
+          <p class="bio-paragraph">
+            I am a <strong>Ph.D. Research Scholar</strong> in the <strong>Department of Industrial and Systems Engineering</strong> at the <strong>Indian Institute of Technology (IIT) Kharagpur</strong>, enrolled in July 2026. I am pursuing my doctoral research under the joint guidance of <strong>Professor Mamata Jenamani</strong> as my Supervisor and <strong>Professor Jitendra Kumar Jha</strong> as my Co-Supervisor.
+          </p>
+
+          <p class="bio-paragraph">
+            I earned direct admission to the Ph.D. programme following my undergraduate degree on the basis of my competitive performance in the <strong>Graduate Aptitude Test in Engineering (GATE 2026)</strong>, achieving a score of <strong>381</strong>.
+          </p>
+
+          <p class="bio-paragraph">
+            Prior to joining IIT Kharagpur, I graduated with a <strong>Bachelor of Engineering (B.E.) in Mechanical Engineering</strong> from <strong>Assam Engineering College, Guwahati</strong>, securing First Class Honours with an aggregate score of <strong>80.00%</strong>. For my undergraduate capstone project, I conducted research on <em>"Design and Fatigue Failure Analysis of a Leaf Spring using ANSYS"</em>, evaluating stress concentrations, fatigue damage accumulation, and endurance limits under cyclic automotive loading conditions.
+          </p>
+
+          <p class="bio-paragraph">
+            My academic and research interests center on <strong>industrial and systems engineering</strong>, <strong>operations research & mathematical optimization</strong>, <strong>decision support systems</strong>, <strong>computational modeling</strong>, and <strong>mechanical system reliability</strong>.
+          </p>
+
+          <!-- Quick Academic Stats Table -->
+          <div class="academic-stats-panel">
+            <div class="stat-card">
+              <div class="stat-number">IIT Kharagpur</div>
+              <div class="stat-caption">Ph.D. Scholar (Enrolled July 2026)</div>
             </div>
-            <div class="stat-item">
-              <div class="stat-number">IIT<span>G</span></div>
-              <div class="stat-label">M.Tech Scholar</div>
+            <div class="stat-card">
+              <div class="stat-number">381</div>
+              <div class="stat-caption">GATE 2026 Score (Direct Entry)</div>
             </div>
-            <div class="stat-item">
-              <div class="stat-number">80.0<span>%</span></div>
-              <div class="stat-label">B.E. Mechanical</div>
+            <div class="stat-card">
+              <div class="stat-number">80.00%</div>
+              <div class="stat-caption">B.E. Mechanical Engineering</div>
             </div>
-            <div class="stat-item">
-              <div class="stat-number">10<span>+</span></div>
-              <div class="stat-label">CAD & FEA Tools</div>
+            <div class="stat-card">
+              <div class="stat-number">90%ile</div>
+              <div class="stat-caption">GATE 2023 Qualified</div>
             </div>
+          </div>
+
+          <!-- Academic Affiliations / Info Box -->
+          <div class="info-callout">
+            <div class="info-callout-header">
+              <span class="info-callout-icon">🏛️</span>
+              <h3>Doctoral Research Department</h3>
+            </div>
+            <p>
+              The <strong>Department of Industrial and Systems Engineering</strong> at IIT Kharagpur is one of the premier academic departments in India dedicated to operations research, industrial engineering, supply chain logistics, systems modeling, quality engineering, and advanced decision analytics.
+            </p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Right 3D Visual Card -->
-        <div class="hero-visual">
-          <div class="hero-card-wrapper">
-            <!-- Floating Top HUD -->
-            <div class="floating-hud hud-top-right">
-              <div class="hud-label">Research Focus</div>
-              <div class="hud-value">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
-                Grasp Optimization
+    <!-- ==========================================================================
+         EDUCATION SECTION
+         ========================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Education</h2>
+          <div class="section-rule"></div>
+        </div>
+
+        <div class="academic-timeline">
+          <!-- Ph.D. IIT Kharagpur -->
+          <div class="timeline-entry current">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header-row">
+                <h3 class="degree-title">Doctor of Philosophy (Ph.D.) in Industrial and Systems Engineering</h3>
+                <span class="timeline-period">July 2026 – Present</span>
+              </div>
+              <div class="institution-name">Indian Institute of Technology (IIT) Kharagpur</div>
+              <div class="institution-details">
+                <p><strong>Department:</strong> Department of Industrial and Systems Engineering</p>
+                <p><strong>Supervisor:</strong> Prof. Mamata Jenamani (Professor, Dept. of Industrial and Systems Engineering)</p>
+                <p><strong>Co-Supervisor:</strong> Prof. Jitendra Kumar Jha (Professor, Dept. of Industrial and Systems Engineering)</p>
+                <p><strong>Admission Mode:</strong> Direct Ph.D. Admission via <strong>GATE 2026</strong> (Score: <strong>381</strong>) directly after B.E. Degree</p>
               </div>
             </div>
+          </div>
 
-            <!-- Main Interactive Card -->
-            <div class="hero-main-card">
-              <div class="hero-card-image">
-                <img src="assets/images/hero-bg.jpg" alt="Computational Mechanics and Robotics Visual Representation" loading="eager">
-                <div class="hero-card-overlay"></div>
+          <!-- B.E. Assam Engineering College -->
+          <div class="timeline-entry">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header-row">
+                <h3 class="degree-title">Bachelor of Engineering (B.E.) in Mechanical Engineering</h3>
+                <span class="timeline-period">2017 – 2021</span>
               </div>
-
-              <div class="hero-card-info">
-                <div class="hero-profile-row">
-                  <div class="profile-avatar-thumb">
-                    <img src="assets/images/avatar.jpg" alt="Monpreet Singh Profile Icon">
-                  </div>
-                  <div class="profile-text-meta">
-                    <h3>Monpreet Singh</h3>
-                    <p>M.Tech, Mechanical Engg. (IITG)</p>
-                  </div>
-                </div>
-
-                <div class="hero-badges-row">
-                  <span class="tech-pill">Bilinear Matrix Inequalities</span>
-                  <span class="tech-pill">Convex Optimization</span>
-                  <span class="tech-pill">ANSYS / SolidEdge</span>
-                  <span class="tech-pill">Python & C++</span>
-                </div>
+              <div class="institution-name">Assam Engineering College, Guwahati (Gauhati University / ASTU)</div>
+              <div class="institution-details">
+                <p><strong>Academic Performance:</strong> <strong>80.00%</strong> (First Class with Honours)</p>
+                <p><strong>Capstone Project:</strong> <em>"Design and Fatigue Failure Analysis of a Leaf Spring using ANSYS"</em></p>
+                <p><strong>Core Focus:</strong> Computer-Aided Design (CAD), Finite Element Analysis (FEA), Structural Mechanics, Thermodynamics, Manufacturing Technology, Dynamics of Machinery.</p>
               </div>
             </div>
+          </div>
 
-            <!-- Floating Bottom HUD -->
-            <div class="floating-hud hud-bottom-left">
-              <div class="hud-label">Contact Mechanics</div>
-              <div class="hud-value">
-                <span style="color: var(--accent-emerald);">●</span> Friction Cones (SOCP)
+          <!-- Higher Secondary - Sainik School Goalpara -->
+          <div class="timeline-entry">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header-row">
+                <h3 class="degree-title">All India Senior School Certificate Examination (CBSE Class XII)</h3>
+                <span class="timeline-period">2016</span>
+              </div>
+              <div class="institution-name">Sainik School, Goalpara, Assam</div>
+              <div class="institution-details">
+                <p><strong>Score:</strong> <strong>87.20%</strong> | Science Stream (Physics, Chemistry, Mathematics, English, Computer Science)</p>
+                <p><strong>Affiliation:</strong> Central Board of Secondary Education (CBSE) & Ministry of Defence</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary - Sainik School Goalpara -->
+          <div class="timeline-entry">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header-row">
+                <h3 class="degree-title">All India Secondary School Examination (CBSE Class X)</h3>
+                <span class="timeline-period">2014</span>
+              </div>
+              <div class="institution-name">Sainik School, Goalpara, Assam</div>
+              <div class="institution-details">
+                <p><strong>Score:</strong> <strong>89.30%</strong> (CGPA: 9.4 / 10.0)</p>
+                <p><strong>Affiliation:</strong> Central Board of Secondary Education (CBSE)</p>
               </div>
             </div>
           </div>
@@ -183,206 +296,245 @@
     </section>
 
     <!-- ==========================================================================
-         FLAGSHIP: INTERACTIVE ROBOTICS & OPTIMIZATION LAB
+         RESEARCH INTERESTS SECTION
          ========================================================================== -->
-    <section class="lab-section" id="lab">
+    <section class="section bg-alt" id="research">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Interactive Simulation</div>
-          <h2 class="section-title">Robotics & Optimization <span class="gradient-text">Virtual Lab</span></h2>
-          <p class="section-desc">
-            Interact with a live simulation of the contact mechanics and friction cone constraints explored in my M.Tech research on <em>Grasp Force Optimization</em>.
-          </p>
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Research Interests</h2>
+          <div class="section-rule"></div>
         </div>
 
-        <div class="lab-container">
-          <!-- Canvas Display Column -->
-          <div class="lab-display">
-            <div class="lab-canvas-wrapper">
-              <canvas id="gripper-canvas"></canvas>
-              <div class="canvas-telemetry">
-                <div class="telemetry-status" id="telemetry-status">● FORCE CLOSURE: STABLE</div>
-                <div class="telemetry-math" id="telemetry-math">Ft ≤ μ·Fn</div>
-              </div>
-            </div>
+        <p class="section-intro">
+          Bridging mathematical optimization, operations research, and engineering computational modeling to address complex industrial, structural, and decision-making challenges.
+        </p>
+
+        <div class="research-areas-grid">
+          <div class="research-area-card">
+            <div class="research-area-icon">📐</div>
+            <h3 class="research-area-title">Operations Research & Optimization</h3>
+            <p class="research-area-desc">
+              Mathematical programming, convex and non-linear optimization, linear programming, direct and gradient-based search heuristics, and numerical convergence algorithms.
+            </p>
           </div>
 
-          <!-- Controls Column -->
-          <div class="lab-controls">
-            <div>
-              <div class="controls-header">
-                <h3>Robotic Grasp Force Simulator</h3>
-                <p>Adjust the normal clamping force, contact friction coefficient, and external disturbance to observe the Coulomb friction cone condition in real time.</p>
-              </div>
+          <div class="research-area-card">
+            <div class="research-area-icon">🏭</div>
+            <h3 class="research-area-title">Industrial & Systems Engineering</h3>
+            <p class="research-area-desc">
+              System modeling, process optimization, decision support systems, facility planning, supply chain network analysis, and quantitative industrial decision analytics.
+            </p>
+          </div>
 
-              <!-- Slider 1: Clamping Force -->
-              <div class="slider-group">
-                <div class="slider-label-row">
-                  <span>Normal Clamping Force (Fn):</span>
-                  <span class="slider-val" id="val-force">45 N</span>
-                </div>
-                <input type="range" class="sim-slider" id="slider-force" min="10" max="100" value="45" step="1" aria-label="Normal Clamping Force">
-              </div>
+          <div class="research-area-card">
+            <div class="research-area-icon">⚙️</div>
+            <h3 class="research-area-title">Computational Mechanics & FEA</h3>
+            <p class="research-area-desc">
+              Finite Element Analysis (FEA) using ANSYS Workbench, solid mechanics, stress concentration evaluation, meshing strategies, and structural response simulations.
+            </p>
+          </div>
 
-              <!-- Slider 2: Friction Coeff -->
-              <div class="slider-group">
-                <div class="slider-label-row">
-                  <span>Friction Coefficient (μ):</span>
-                  <span class="slider-val" id="val-mu">0.45</span>
-                </div>
-                <input type="range" class="sim-slider" id="slider-mu" min="0.10" max="0.90" value="0.45" step="0.05" aria-label="Friction Coefficient">
-              </div>
+          <div class="research-area-card">
+            <div class="research-area-icon">🔬</div>
+            <h3 class="research-area-title">Fatigue & Structural Failure Analysis</h3>
+            <p class="research-area-desc">
+              Cyclic loading fatigue life prediction, S-N curve modeling, damage accumulation theories (Miner's rule), stress endurance limits, and failure mitigation in structural components.
+            </p>
+          </div>
 
-              <!-- Slider 3: External Load -->
-              <div class="slider-group">
-                <div class="slider-label-row">
-                  <span>Disturbance / Payload Weight (Fext):</span>
-                  <span class="slider-val" id="val-load">25 N</span>
-                </div>
-                <input type="range" class="sim-slider" id="slider-load" min="5" max="80" value="25" step="1" aria-label="External Disturbance Load">
-              </div>
+          <div class="research-area-card">
+            <div class="research-area-icon">💻</div>
+            <h3 class="research-area-title">Algorithm Engineering & Computing</h3>
+            <p class="research-area-desc">
+              Implementation of numerical methods from scratch in C/C++ and Python, data structures, scientific computing with NumPy and SciPy, and automated parametric simulation workflows.
+            </p>
+          </div>
 
-              <!-- Live Computed Metrics -->
-              <div class="sim-metrics-grid">
-                <div class="metric-box">
-                  <span class="metric-title">Max Friction Limit</span>
-                  <span class="metric-number" id="metric-fmax">40.5 N</span>
-                </div>
-                <div class="metric-box">
-                  <span class="metric-title">Friction Cone Angle</span>
-                  <span class="metric-number" id="metric-angle">±24.2°</span>
-                </div>
-                <div class="metric-box">
-                  <span class="metric-title">Stability Margin</span>
-                  <span class="metric-number" id="metric-margin">+38%</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="sim-actions">
-              <button class="btn btn-secondary btn-sm" id="btn-sim-reset">Reset Parameters</button>
-              <button class="btn btn-primary btn-sm" id="btn-sim-mode">Switch to 1D Optimizer</button>
-            </div>
+          <div class="research-area-card">
+            <div class="research-area-icon">📊</div>
+            <h3 class="research-area-title">Applied Data Analytics & Modeling</h3>
+            <p class="research-area-desc">
+              Data-driven modeling of engineering systems, exploratory statistical analysis, surrogate modeling, and predictive analytics for operational performance optimization.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         RESEARCH & PROJECTS SECTION
+         RESEARCH & ENGINEERING PROJECTS SECTION
          ========================================================================== -->
-    <section class="projects-section" id="projects">
+    <section class="section" id="projects">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Featured Work</div>
-          <h2 class="section-title">Research & <span class="gradient-text">Engineering Projects</span></h2>
-          <p class="section-desc">
-            Rigorous computational engineering spanning mathematical optimization algorithms, robotic manipulation, and finite element modeling.
-          </p>
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Research & Engineering Projects</h2>
+          <div class="section-rule"></div>
         </div>
 
-        <!-- Filter Buttons -->
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All Projects</button>
-          <button class="filter-btn" data-filter="robotics">Robotics & Optimization</button>
-          <button class="filter-btn" data-filter="mechanics">Computational Mechanics</button>
-          <button class="filter-btn" data-filter="cad">CAD & Simulation</button>
-        </div>
+        <p class="section-intro">
+          Selected academic capstone research, numerical algorithm implementations, and finite element modeling projects.
+        </p>
 
-        <!-- Projects Grid -->
-        <div class="projects-grid">
-          <!-- Project 1: Grasp Force Optimization -->
-          <article class="project-card" data-category="robotics mechanics">
-            <div class="project-thumbnail">
-              <img src="assets/images/project-grasp-force.jpg" alt="Grasp Force Optimization with Bilinear Matrix Inequalities" loading="lazy">
-              <div class="project-badge">M.Tech Thesis • IIT Guwahati</div>
+        <div class="academic-projects-list">
+          <!-- Project 1: Leaf Spring ANSYS (B.E. Capstone Project) -->
+          <article class="academic-project-card featured-project">
+            <div class="project-media">
+              <img src="assets/images/project-leaf-spring.jpg" alt="Design and Fatigue Failure analysis of a leaf spring using ANSYS" class="project-img">
+              <div class="project-badge-tag">B.E. Capstone Project</div>
             </div>
-            <div class="project-body">
-              <div class="project-supervisor">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                Dr. Shyamanta M Hazarika (Prof & HOD, ME)
+
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-institution">Assam Engineering College, Guwahati</span>
+                <span class="project-date">Final Year Project</span>
               </div>
-              <h3 class="project-title">Grasp Force Optimization as a Bilinear Matrix Inequality (BMI) Problem</h3>
-              <p class="project-summary">
-                Formulating multi-fingered robotic grasp force optimization as a convex problem incorporating force closure and friction cone constraints. Exploring deep learning models to predict optimal warm-start solutions for bilinear matrix inequalities.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Deep Learning</span>
-                <span class="project-tag">Convex Optimization</span>
-                <span class="project-tag">BMIs</span>
-                <span class="project-tag">Robotics</span>
-                <span class="project-tag">Python</span>
+
+              <h3 class="academic-project-title">
+                Design and Fatigue Failure Analysis of a Leaf Spring using ANSYS
+              </h3>
+
+              <div class="project-abstract">
+                <p>
+                  <strong>Abstract & Methodology:</strong> Automotive multi-leaf springs are critical suspension components subjected to continuous, cyclic, and stochastic impact loads transmitted from uneven road surfaces. This research focused on the comprehensive computer-aided design (CAD) and finite element analysis (FEA) to evaluate the structural integrity, stress distribution, and fatigue failure life of a semi-elliptic leaf spring assembly.
+                </p>
+                <p>
+                  A 3D parametric CAD model was constructed based on standard commercial vehicle specifications. Static structural and fatigue analyses were conducted within ANSYS Workbench to analyze von Mises stress contours, maximum deflection under peak payload, and localized stress concentrations near the master leaf eye ends and center clamp interface.
+                </p>
+                <p>
+                  Fatigue life and damage accumulation were evaluated using the ANSYS Fatigue Tool utilizing the stress-life ($S-N$) approach with Goodman mean stress correction. The study identified critical cyclic failure locations and provided insights into optimal thickness gradations and material selections to enhance fatigue endurance and operational safety.
+                </p>
               </div>
-              <div class="project-footer">
-                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Aug 2024 – Present</span>
-                <a href="#projects" class="learn-more-link open-modal-btn" data-project="grasp-force">
-                  <span>Deep Dive</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                </a>
+
+              <div class="project-key-results">
+                <div class="result-item">
+                  <span class="result-label">Software Tools:</span>
+                  <span class="result-value">ANSYS Static Structural, ANSYS Fatigue Tool, SolidWorks, AutoCAD</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Key Analytical Focus:</span>
+                  <span class="result-value">Von Mises Stress, Deflection, S-N Fatigue Life, Goodman Mean Stress Correction</span>
+                </div>
+              </div>
+
+              <div class="project-tags-row">
+                <span class="tag-academic">ANSYS FEA</span>
+                <span class="tag-academic">Fatigue Failure Analysis</span>
+                <span class="tag-academic">Structural Mechanics</span>
+                <span class="tag-academic">CAD Modeling</span>
+                <span class="tag-academic">SolidWorks</span>
+                <span class="tag-academic">Mechanical Engineering</span>
+              </div>
+
+              <div class="project-actions-row">
+                <button class="btn btn-academic-sm open-modal-btn" data-project="leaf-spring">
+                  Read Technical Summary ↗
+                </button>
               </div>
             </div>
           </article>
 
           <!-- Project 2: Numerical Optimization in C -->
-          <article class="project-card" data-category="robotics mechanics">
-            <div class="project-thumbnail">
-              <img src="assets/images/project-optimization.jpg" alt="Optimization of a function by Direct and Gradient Based Method" loading="lazy">
-              <div class="project-badge">Core Algorithms • IIT Guwahati</div>
+          <article class="academic-project-card">
+            <div class="project-media">
+              <img src="assets/images/project-optimization.jpg" alt="Function Optimization via Direct and Gradient-Based Search Methods" class="project-img">
+              <div class="project-badge-tag">Algorithm Implementation</div>
             </div>
-            <div class="project-body">
-              <div class="project-supervisor">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                Dr. Deepak Sharma (Professor, Dept. of ME)
+
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-institution">Assam Engineering College / Core Algorithms</span>
+                <span class="project-date">Computational Algorithms</span>
               </div>
-              <h3 class="project-title">Function Optimization via Direct and Gradient-Based Search Methods</h3>
-              <p class="project-summary">
-                Engineered high-efficiency numerical search algorithms in C language. Implemented Bounding Phase Method for initial unimodal bracketing followed by Bisection Method for rapid interval reduction to pinpoint global extrema.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">C Language</span>
-                <span class="project-tag">Bounding Phase</span>
-                <span class="project-tag">Bisection Method</span>
-                <span class="project-tag">Gradient Search</span>
+
+              <h3 class="academic-project-title">
+                Function Optimization via Direct and Gradient-Based Search Methods
+              </h3>
+
+              <div class="project-abstract">
+                <p>
+                  <strong>Abstract & Methodology:</strong> Engineered numerical optimization routines from scratch in pure C language to eliminate third-party library overhead and evaluate algorithm efficiency for non-linear single-variable and multi-variable benchmark functions.
+                </p>
+                <p>
+                  Implemented the <strong>Bounding Phase Method</strong> as a direct, derivative-free search technique to reliably establish an initial unimodal bracket $[x_l, x_u]$ containing the global/local optimum through exponential step-size scaling. Integrated the <strong>Bisection Method</strong> as a first-order gradient-based approach to iteratively halve the bracket interval until convergence within tight numerical tolerance ($\epsilon \le 10^{-6}$).
+                </p>
               </div>
-              <div class="project-footer">
-                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">August 2024</span>
-                <a href="#projects" class="learn-more-link open-modal-btn" data-project="optimization-methods">
-                  <span>Deep Dive</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                </a>
+
+              <div class="project-key-results">
+                <div class="result-item">
+                  <span class="result-label">Implementation:</span>
+                  <span class="result-value">Pure C Language (Standard C99, Memory-Safe Pointers)</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Techniques:</span>
+                  <span class="result-value">Bounding Phase Method, Bisection Method, Unimodal Bracketing</span>
+                </div>
+              </div>
+
+              <div class="project-tags-row">
+                <span class="tag-academic">C Language</span>
+                <span class="tag-academic">Numerical Optimization</span>
+                <span class="tag-academic">Direct Search</span>
+                <span class="tag-academic">Gradient Search</span>
+                <span class="tag-academic">Mathematical Algorithms</span>
+              </div>
+
+              <div class="project-actions-row">
+                <button class="btn btn-academic-sm open-modal-btn" data-project="optimization-methods">
+                  Read Technical Summary ↗
+                </button>
               </div>
             </div>
           </article>
 
-          <!-- Project 3: CAD & FEA Structural Analysis -->
-          <article class="project-card" data-category="cad mechanics">
-            <div class="project-thumbnail">
-              <img src="assets/images/project-cad-fea.jpg" alt="CAD Modeling and FEA Structural Simulation" loading="lazy">
-              <div class="project-badge">CAD / CAE • Simulation</div>
+          <!-- Project 3: CAD Modeling & FEA Structural Stress Analysis -->
+          <article class="academic-project-card">
+            <div class="project-media">
+              <img src="assets/images/project-cad-fea.jpg" alt="CAD Modeling & Finite Element Stress Analysis" class="project-img">
+              <div class="project-badge-tag">CAE & Machine Design</div>
             </div>
-            <div class="project-body">
-              <div class="project-supervisor">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                Computational Mechanics Lab
+
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-institution">CAD & Finite Element Modeling Studies</span>
+                <span class="project-date">Mechanical Design</span>
               </div>
-              <h3 class="project-title">CAD Modeling & Finite Element Stress Analysis (FEA)</h3>
-              <p class="project-summary">
-                Comprehensive machine design, 3D modeling, and structural stress evaluation across SolidWorks, Solid Edge, and ANSYS Static Structural. Investigated stress concentration factors, safety margins, and mesh convergence.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">ANSYS Static</span>
-                <span class="project-tag">SolidWorks</span>
-                <span class="project-tag">Solid Edge</span>
-                <span class="project-tag">ANSYS Fluent</span>
-                <span class="project-tag">AutoCAD</span>
+
+              <h3 class="academic-project-title">
+                CAD Modeling & Finite Element Stress Analysis (FEA)
+              </h3>
+
+              <div class="project-abstract">
+                <p>
+                  <strong>Abstract & Methodology:</strong> Comprehensive mechanical drafting, 3D parametric solid modeling, and structural stress evaluation across industry-standard CAD/CAE software suites including SolidWorks, Siemens Solid Edge, AutoCAD, and ANSYS Static Structural.
+                </p>
+                <p>
+                  Investigated mechanical component assemblies under static and cyclic loading conditions. Performed mesh convergence studies, evaluated principal stresses, shear stress distributions, and displacement vectors, comparing numerical FEA results with classical analytical mechanics formulas.
+                </p>
               </div>
-              <div class="project-footer">
-                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Ongoing</span>
-                <a href="#projects" class="learn-more-link open-modal-btn" data-project="cad-fea-analysis">
-                  <span>Deep Dive</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                </a>
+
+              <div class="project-key-results">
+                <div class="result-item">
+                  <span class="result-label">Software Suites:</span>
+                  <span class="result-value">ANSYS Workbench, SolidWorks, Siemens Solid Edge, AutoCAD</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Analysis Types:</span>
+                  <span class="result-value">Static Structural FEA, Stress Concentration Analysis, 3D Assembly Modeling</span>
+                </div>
+              </div>
+
+              <div class="project-tags-row">
+                <span class="tag-academic">ANSYS Static</span>
+                <span class="tag-academic">SolidWorks</span>
+                <span class="tag-academic">Siemens Solid Edge</span>
+                <span class="tag-academic">FEA</span>
+                <span class="tag-academic">Machine Drawing</span>
+              </div>
+
+              <div class="project-actions-row">
+                <button class="btn btn-academic-sm open-modal-btn" data-project="cad-fea-analysis">
+                  Read Technical Summary ↗
+                </button>
               </div>
             </div>
           </article>
@@ -391,428 +543,146 @@
     </section>
 
     <!-- ==========================================================================
-         TECHNICAL SKILLS & TOOLS MATRIX
+         TECHNICAL SKILLS & SCIENTIFIC TOOLKIT SECTION
          ========================================================================== -->
-    <section class="skills-section" id="skills">
+    <section class="section bg-alt" id="skills">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Competencies</div>
-          <h2 class="section-title">Technical Skills & <span class="gradient-text">Software Toolkit</span></h2>
-          <p class="section-desc">
-            A balanced synthesis of mathematical theory, programming proficiency, and industry-standard engineering simulation packages.
-          </p>
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Technical Skills & Software Toolkit</h2>
+          <div class="section-rule"></div>
         </div>
 
-        <div class="skills-matrix">
-          <!-- Category 1: Programming & Math -->
-          <div class="skill-category-card">
-            <div class="skill-icon-header">
-              <div class="skill-icon-box">💻</div>
-              <div>
-                <h3>Programming</h3>
-                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Core Languages</span>
-              </div>
-            </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>Python (NumPy, SciPy, PyTorch)</span>
-                  <span class="skill-level-badge">Advanced</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 90%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>C / C++ (Algorithms & Optimization)</span>
-                  <span class="skill-level-badge">Proficient</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>MATLAB (Matrix Computing & Sim)</span>
-                  <span class="skill-level-badge">Proficient</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 80%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>Linux / Bash Shell</span>
-                  <span class="skill-level-badge">Working</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 75%;"></div></div>
-              </div>
-            </div>
+        <div class="skills-academic-grid">
+          <!-- Programming & Computing -->
+          <div class="skills-card">
+            <h3 class="skills-card-title">
+              <span class="skills-card-icon">💻</span>
+              Programming & Scientific Computing
+            </h3>
+            <ul class="academic-skills-list">
+              <li><strong>Python:</strong> NumPy, SciPy, Matplotlib, Data Analysis, Automation</li>
+              <li><strong>C / C++:</strong> Data Structures, Numerical Optimization, Algorithmic Implementation</li>
+              <li><strong>MATLAB:</strong> Matrix Computations, Numerical Algorithms, Visualization</li>
+              <li><strong>Shell Scripting:</strong> Linux / Unix Environment, Bash Command Line</li>
+            </ul>
           </div>
 
-          <!-- Category 2: CAD & CAE Simulation -->
-          <div class="skill-category-card">
-            <div class="skill-icon-header">
-              <div class="skill-icon-box">⚙️</div>
-              <div>
-                <h3>CAD & CAE Software</h3>
-                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Design & Simulation</span>
-              </div>
-            </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>SolidWorks</span>
-                  <span class="skill-level-badge">Advanced</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 92%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>Siemens Solid Edge (TA Certified)</span>
-                  <span class="skill-level-badge">Expert</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 95%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>AutoCAD</span>
-                  <span class="skill-level-badge">Proficient</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>ANSYS Static Structural & Fluent</span>
-                  <span class="skill-level-badge">Proficient</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 80%;"></div></div>
-              </div>
-            </div>
+          <!-- CAD & Simulation -->
+          <div class="skills-card">
+            <h3 class="skills-card-title">
+              <span class="skills-card-icon">⚙️</span>
+              CAE & CAD Engineering Software
+            </h3>
+            <ul class="academic-skills-list">
+              <li><strong>ANSYS Workbench:</strong> ANSYS Static Structural, Fatigue Tool, ANSYS Fluent</li>
+              <li><strong>SolidWorks:</strong> 3D Parametric Modeling, Assembly Design, Drafting</li>
+              <li><strong>Siemens Solid Edge:</strong> Mechanical Drawing, Machine Drafting, Assembly</li>
+              <li><strong>AutoCAD:</strong> 2D Engineering Drawings, Geometric Dimensioning & Tolerancing</li>
+            </ul>
           </div>
 
-          <!-- Category 3: Key Academic Engineering Domains -->
-          <div class="skill-category-card">
-            <div class="skill-icon-header">
-              <div class="skill-icon-box">📐</div>
-              <div>
-                <h3>Engineering Domains</h3>
-                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Theoretical Mastery</span>
-              </div>
-            </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>Computational Mechanics</span>
-                  <span class="skill-level-badge">Specialization</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 92%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>Optimization Methods in Engineering</span>
-                  <span class="skill-level-badge">Specialization</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 90%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>Robotics & Robot Applications</span>
-                  <span class="skill-level-badge">Advanced</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>Machine Learning & Algorithms</span>
-                  <span class="skill-level-badge">Proficient</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 82%;"></div></div>
-              </div>
-            </div>
+          <!-- Analytical & Operations Research -->
+          <div class="skills-card">
+            <h3 class="skills-card-title">
+              <span class="skills-card-icon">📊</span>
+              Quantitative & Optimization Methods
+            </h3>
+            <ul class="academic-skills-list">
+              <li><strong>Operations Research:</strong> Linear Programming, Mathematical Optimization</li>
+              <li><strong>Numerical Methods:</strong> Direct Search, Gradient Search, Root-Finding, Bracketing</li>
+              <li><strong>Engineering Mechanics:</strong> Continuum Mechanics, Structural Stress & Fatigue</li>
+              <li><strong>Decision Analysis:</strong> Systems Modeling, Process Analytics</li>
+            </ul>
           </div>
 
-          <!-- Category 4: Tools & Scientific Utilities -->
-          <div class="skill-category-card">
-            <div class="skill-icon-header">
-              <div class="skill-icon-box">📊</div>
-              <div>
-                <h3>Scientific Tools</h3>
-                <span class="mono" style="font-size: 0.8rem; color: var(--text-muted);">Analysis & Visualization</span>
-              </div>
-            </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>Tecplot & GeoGebra</span>
-                  <span class="skill-level-badge">Proficient</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>Advanced Excel & Data Modeling</span>
-                  <span class="skill-level-badge">Advanced</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 90%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>MS Visio & Technical Documentation</span>
-                  <span class="skill-level-badge">Advanced</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 88%;"></div></div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span>Git & Version Control</span>
-                  <span class="skill-level-badge">Proficient</span>
-                </div>
-                <div class="skill-progress-bar"><div class="skill-fill" style="width: 80%;"></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Key Courses Showcase -->
-        <div class="courses-showcase">
-          <div class="courses-header">
-            <span style="font-size: 1.5rem;">📚</span>
-            <div>
-              <h3>Key Courses & Academic Foundations</h3>
-              <p style="color: var(--text-secondary); font-size: 0.9rem;">Advanced theoretical coursework completed at IIT Guwahati & Assam Engineering College</p>
-            </div>
-          </div>
-
-          <div class="courses-grid">
-            <div class="course-card">
-              <span class="course-icon">✦</span>
-              <span>Advanced Engineering Mathematics</span>
-            </div>
-            <div class="course-card">
-              <span class="course-icon">✦</span>
-              <span>Continuum Mechanics</span>
-            </div>
-            <div class="course-card">
-              <span class="course-icon">✦</span>
-              <span>Numerical Analysis</span>
-            </div>
-            <div class="course-card">
-              <span class="course-icon">✦</span>
-              <span>Optimization Methods in Engineering</span>
-            </div>
-            <div class="course-card">
-              <span class="course-icon">✦</span>
-              <span>Robotics & Robot Applications</span>
-            </div>
-            <div class="course-card">
-              <span class="course-icon">✦</span>
-              <span>Machine Learning & Its Algorithms</span>
-            </div>
-            <div class="course-card">
-              <span class="course-icon">✦</span>
-              <span>Python with Data Structures & Algorithms</span>
-            </div>
-            <div class="course-card">
-              <span class="course-icon">✦</span>
-              <span>Fundamentals of Digital Marketing</span>
-            </div>
+          <!-- Scientific Utilities & Documentation -->
+          <div class="skills-card">
+            <h3 class="skills-card-title">
+              <span class="skills-card-icon">📝</span>
+              Scientific Tools & Documentation
+            </h3>
+            <ul class="academic-skills-list">
+              <li><strong>Data Modeling:</strong> Advanced Microsoft Excel (Statistical & Mathematical Modeling)</li>
+              <li><strong>Scientific Plotting:</strong> Tecplot, GeoGebra, Matplotlib</li>
+              <li><strong>Documentation:</strong> LaTeX, Technical Report Writing, MS Office / Visio</li>
+              <li><strong>Version Control:</strong> Git, GitHub</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         EXPERIENCE & LEADERSHIP TIMELINE
+         HONORS, AWARDS & ACHIEVEMENTS SECTION
          ========================================================================== -->
-    <section class="experience-section" id="experience">
+    <section class="section" id="honors">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Career & Roles</div>
-          <h2 class="section-title">Teaching, Mentorship & <span class="gradient-text">Leadership</span></h2>
-          <p class="section-desc">
-            Proven track record of mentorship, classroom instruction, and organizational responsibility.
-          </p>
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Honors, Awards & Achievements</h2>
+          <div class="section-rule"></div>
         </div>
 
-        <div class="timeline">
-          <!-- Timeline 1: Teaching Assistant IIT Guwahati -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Teaching Assistant (ME215: Machine Drawing)</h3>
-                  <div class="timeline-org">Indian Institute of Technology, Guwahati</div>
-                </div>
-                <span class="timeline-date">Aug 2024 – Present</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Guided undergraduate engineering students in mastering <strong>Siemens Solid Edge</strong> CAD software for machine drafting and mechanical drawing tasks.</li>
-                <li>Conducted interactive laboratory sessions, addressing CAD geometry errors, dimensioning standards, and assembly troubleshooting.</li>
-                <li>Systematically evaluated lab assignments and provided constructive technical feedback to enhance student design accuracy.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Timeline 2: Peer Mentor Saathi Cell -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Peer Mentor — Saathi Counselling Cell</h3>
-                  <div class="timeline-org">IIT Guwahati</div>
-                </div>
-                <span class="timeline-date">2024</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Provided one-on-one academic and campus orientation mentorship for newly joined postgraduate freshers.</li>
-                <li>Conducted peer support initiatives fostering mental health awareness, stress management, and research acclimation.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Timeline 3: National Level Quiz Organizer -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Organising Member — National Level Quiz Competition</h3>
-                  <div class="timeline-org">Assam Engineering College</div>
-                </div>
-                <span class="timeline-date">Feb 2019</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Managed logistics, participant registrations, and technical coordination for a multi-institution competitive quiz.</li>
-                <li>Coordinated team logistics and stage management, ensuring seamless event execution.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Timeline 4: NCC & Sainik School Leadership -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">NCC Cadet & Sainik School Leadership</h3>
-                  <div class="timeline-org">Sainik School Goalpara & NCC</div>
-                </div>
-                <span class="timeline-date">2010 – 2016</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Secured <strong>"A" Grade</strong> in both NCC Certificate A & B Examinations.</li>
-                <li>Participated in prestigious All India Trekking Expedition and National Adventure Programme (Grade "A", Pachmarhi).</li>
-                <li>1st Position in 4 x 400m Relay, Top 5 in Cross Country 8km, and Obstacle Course finalist.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         EDUCATION & ACHIEVEMENTS SECTION
-         ========================================================================== -->
-    <section class="edu-achieve-section" id="education">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Credentials</div>
-          <h2 class="section-title">Education & <span class="gradient-text">Honors</span></h2>
-          <p class="section-desc">
-            Academic milestones from premier engineering institutions and competitive national examinations.
-          </p>
-        </div>
-
-        <div class="edu-grid">
-          <!-- Left: Education -->
-          <div class="edu-column">
-            <h3>
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
-              Academic Background
-            </h3>
-
-            <div class="edu-card">
-              <h4 class="edu-degree">M.Tech in Computational Mechanics</h4>
-              <div class="edu-inst">Indian Institute of Technology (IIT), Guwahati</div>
-              <div class="edu-score-row">
-                <span>CGPA: 6.82 (Current)</span>
-                <span>2023 – Present</span>
-              </div>
-            </div>
-
-            <div class="edu-card">
-              <h4 class="edu-degree">B.E. in Mechanical Engineering</h4>
-              <div class="edu-inst">Assam Engineering College, Guwahati</div>
-              <div class="edu-score-row">
-                <span>Score: 80.00%</span>
-                <span>2017 – 2021</span>
-              </div>
-            </div>
-
-            <div class="edu-card">
-              <h4 class="edu-degree">Senior Secondary (CBSE)</h4>
-              <div class="edu-inst">Sainik School, Goalpara</div>
-              <div class="edu-score-row">
-                <span>Score: 87.20%</span>
-                <span>2016</span>
-              </div>
-            </div>
-
-            <div class="edu-card">
-              <h4 class="edu-degree">Secondary School (CBSE)</h4>
-              <div class="edu-inst">Sainik School, Goalpara</div>
-              <div class="edu-score-row">
-                <span>Score: 89.30%</span>
-                <span>2014</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: Key Honors & Key Courses -->
-          <div class="achieve-column">
-            <h3>
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-              Achievements & Honors
-            </h3>
-
-            <div class="achieve-card">
-              <div class="achieve-badge-row">
-                <div class="achieve-icon">🏆</div>
-                <div>
-                  <h4 class="achieve-title">GATE 2023 Qualified</h4>
-                  <div class="achieve-desc">Secured <strong>90 Percentile</strong> in National Graduate Aptitude Test in Engineering.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="achieve-card">
-              <div class="achieve-badge-row">
-                <div class="achieve-icon">🎖️</div>
-                <div>
-                  <h4 class="achieve-title">National Cyber Olympiad</h4>
-                  <div class="achieve-desc">Certificate of Excellence for securing <strong>23rd rank</strong> across North East India.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="achieve-card">
-              <div class="achieve-badge-row">
-                <div class="achieve-icon">🎖️</div>
-                <div>
-                  <h4 class="achieve-title">NCC 'A' Grade (Certificate A & B)</h4>
-                  <div class="achieve-desc">Secured top grade in National Cadet Corps evaluation along with National Adventure Programme (Pachmarhi).</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="achieve-card">
-              <div class="achieve-badge-row">
-                <div class="achieve-icon">🤝</div>
-                <div>
-                  <h4 class="achieve-title">Ranbhoomi Impact League</h4>
-                  <div class="achieve-desc">Helped raise funds for Hero Ranbhoomi Impact League, IIM Indore & HERO Group (2018).</div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="honors-table-wrapper">
+          <table class="academic-table">
+            <thead>
+              <tr>
+                <th style="width: 15%;">Year</th>
+                <th style="width: 35%;">Honor / Examination</th>
+                <th style="width: 50%;">Details & Academic Significance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight-row">
+                <td><strong>2026</strong></td>
+                <td><strong>GATE 2026 Qualified</strong> (Score: <strong>381</strong>)</td>
+                <td>
+                  Direct admission secured into the <strong>Doctor of Philosophy (Ph.D.) programme</strong> in the <strong>Department of Industrial and Systems Engineering at IIT Kharagpur</strong> directly with B.E. degree credentials.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>2023</strong></td>
+                <td><strong>GATE 2023 Qualified</strong></td>
+                <td>
+                  Secured <strong>90 Percentile</strong> in the National Graduate Aptitude Test in Engineering in Mechanical Engineering.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>2019</strong></td>
+                <td><strong>National Level Quiz Organizer</strong></td>
+                <td>
+                  Coordinated logistics, participant management, and technical conduction for a multi-collegiate National Quiz at Assam Engineering College.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>2018</strong></td>
+                <td><strong>Ranbhoomi Impact League</strong></td>
+                <td>
+                  Recognized for fundraising and campaign organization for Hero Ranbhoomi Impact League, IIM Indore & HERO Group.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>2016</strong></td>
+                <td><strong>NCC 'A' Grade (Certificate A & B)</strong></td>
+                <td>
+                  Secured highest <strong>"A" Grade</strong> in both National Cadet Corps Certificate A & B Examinations. Completed All India Trekking Expedition & National Adventure Programme (Pachmarhi, Grade 'A').
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Schooling</strong></td>
+                <td><strong>National Cyber Olympiad</strong></td>
+                <td>
+                  Awarded Certificate of Excellence for securing <strong>23rd Rank</strong> across the North East region of India.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>2010 – 2016</strong></td>
+                <td><strong>Sainik School Goalpara Leadership & Athletics</strong></td>
+                <td>
+                  1st Position in Inter-House 4 × 400m Relay; Top 5 in Cross Country 8km; Obstacle Course Finalist at Sainik School Goalpara.
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -820,101 +690,101 @@
     <!-- ==========================================================================
          CONTACT SECTION
          ========================================================================== -->
-    <section class="contact-section" id="contact">
+    <section class="section bg-alt" id="contact">
       <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Get in Touch</div>
-          <h2 class="section-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
-          <p class="section-desc">
-            Interested in discussing computational mechanics, robotic grasp optimization, or engineering opportunities? Feel free to reach out directly.
-          </p>
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Contact Information</h2>
+          <div class="section-rule"></div>
         </div>
 
-        <div class="contact-grid">
-          <!-- Left: Contact Details & Quick Copy -->
-          <div class="contact-info-col">
-            <h3>Contact Information</h3>
-            <p>
-              I am based at IIT Guwahati, Assam, India. Whether you have questions regarding my research or want to discuss full-time roles, I welcome your message.
-            </p>
+        <p class="section-intro">
+          Please feel free to get in touch regarding research discussions, academic inquiries, or collaborative opportunities.
+        </p>
 
-            <div class="contact-cards-list">
-              <!-- Academic Email -->
-              <div class="contact-detail-card">
-                <div class="contact-card-left">
-                  <div class="contact-card-icon">🎓</div>
-                  <div>
-                    <div class="contact-card-title">Academic Email</div>
-                    <a href="mailto:s.monpreet@iitg.ac.in" class="contact-card-value">s.monpreet@iitg.ac.in</a>
-                  </div>
-                </div>
-                <button class="copy-btn copy-data-btn" data-copy="s.monpreet@iitg.ac.in" title="Copy Academic Email">Copy</button>
+        <div class="contact-academic-grid">
+          <!-- Institutional & Contact Address Card -->
+          <div class="academic-contact-box">
+            <h3 class="contact-box-title">Office & Institutional Coordinates</h3>
+            
+            <div class="address-entry">
+              <strong>Monpreet Singh</strong><br>
+              Ph.D. Research Scholar<br>
+              Department of Industrial and Systems Engineering<br>
+              Indian Institute of Technology Kharagpur<br>
+              Kharagpur, West Bengal – 721302, India
+            </div>
+
+            <div class="contact-detail-items">
+              <div class="c-item">
+                <span class="c-label">Institute Email:</span>
+                <span class="c-data">
+                  <a href="mailto:s.monpreet26@kgpian.iitkgp.ac.in">s.monpreet26@kgpian.iitkgp.ac.in</a>
+                  <button class="copy-btn copy-data-btn" data-copy="s.monpreet26@kgpian.iitkgp.ac.in" title="Copy Institute Email">Copy</button>
+                </span>
               </div>
 
-              <!-- Personal Email -->
-              <div class="contact-detail-card">
-                <div class="contact-card-left">
-                  <div class="contact-card-icon">✉️</div>
-                  <div>
-                    <div class="contact-card-title">Personal Email</div>
-                    <a href="mailto:singhmomnpreet064@gmail.com" class="contact-card-value">singhmomnpreet064@gmail.com</a>
-                  </div>
-                </div>
-                <button class="copy-btn copy-data-btn" data-copy="singhmomnpreet064@gmail.com" title="Copy Personal Email">Copy</button>
+              <div class="c-item">
+                <span class="c-label">Personal Email:</span>
+                <span class="c-data">
+                  <a href="mailto:singhmomnpreet064@gmail.com">singhmomnpreet064@gmail.com</a>
+                  <button class="copy-btn copy-data-btn" data-copy="singhmomnpreet064@gmail.com" title="Copy Personal Email">Copy</button>
+                </span>
               </div>
 
-              <!-- Phone -->
-              <div class="contact-detail-card">
-                <div class="contact-card-left">
-                  <div class="contact-card-icon">📞</div>
-                  <div>
-                    <div class="contact-card-title">Phone</div>
-                    <a href="tel:+919864748082" class="contact-card-value">+91-9864748082</a>
-                  </div>
-                </div>
-                <button class="copy-btn copy-data-btn" data-copy="+919864748082" title="Copy Phone">Copy</button>
+              <div class="c-item">
+                <span class="c-label">Phone:</span>
+                <span class="c-data">
+                  <a href="tel:+919864748082">+91-9864748082</a>
+                  <button class="copy-btn copy-data-btn" data-copy="+919864748082" title="Copy Phone Number">Copy</button>
+                </span>
               </div>
 
-              <!-- LinkedIn -->
-              <div class="contact-detail-card">
-                <div class="contact-card-left">
-                  <div class="contact-card-icon">💼</div>
-                  <div>
-                    <div class="contact-card-title">LinkedIn Profile</div>
-                    <a href="https://www.linkedin.com/in/singh5164" target="_blank" rel="noopener noreferrer" class="contact-card-value">linkedin.com/in/singh5164</a>
-                  </div>
-                </div>
-                <a href="https://www.linkedin.com/in/singh5164" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Open LinkedIn Profile">Visit ↗</a>
+              <div class="c-item">
+                <span class="c-label">LinkedIn:</span>
+                <span class="c-data">
+                  <a href="https://www.linkedin.com/in/singh5164" target="_blank" rel="noopener noreferrer">linkedin.com/in/singh5164</a>
+                </span>
+              </div>
+
+              <div class="c-item">
+                <span class="c-label">GitHub:</span>
+                <span class="c-data">
+                  <a href="https://github.com/Monpreet64" target="_blank" rel="noopener noreferrer">github.com/Monpreet64</a>
+                </span>
               </div>
             </div>
           </div>
 
-          <!-- Right: Interactive Message Form -->
-          <div class="contact-form-col">
-            <form class="contact-form" id="contact-form">
-              <div class="form-group">
-                <label for="sender-name" class="form-label">Your Name</label>
-                <input type="text" id="sender-name" class="form-input" placeholder="e.g. Dr. Jane Doe / Hiring Manager" required>
+          <!-- Academic Message Form -->
+          <div class="academic-contact-box">
+            <h3 class="contact-box-title">Send a Direct Academic Inquiry</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 18px;">
+              Submitting this form prepares an email directly directed to both my institute and personal inboxes.
+            </p>
+
+            <form class="academic-form" id="contact-form">
+              <div class="form-row">
+                <label for="sender-name" class="academic-label">Your Full Name *</label>
+                <input type="text" id="sender-name" class="academic-input" placeholder="e.g. Prof. / Dr. / Researcher Name" required>
               </div>
 
-              <div class="form-group">
-                <label for="sender-email" class="form-label">Your Email</label>
-                <input type="email" id="sender-email" class="form-input" placeholder="e.g. name@organization.com" required>
+              <div class="form-row">
+                <label for="sender-email" class="academic-label">Your Email Address *</label>
+                <input type="email" id="sender-email" class="academic-input" placeholder="e.g. name@university.edu" required>
               </div>
 
-              <div class="form-group">
-                <label for="sender-subject" class="form-label">Subject</label>
-                <input type="text" id="sender-subject" class="form-input" placeholder="e.g. Research Collaboration / Job Opportunity">
+              <div class="form-row">
+                <label for="sender-subject" class="academic-label">Subject *</label>
+                <input type="text" id="sender-subject" class="academic-input" placeholder="e.g. Research Inquiry / Academic Collaboration" required>
               </div>
 
-              <div class="form-group">
-                <label for="sender-message" class="form-label">Message</label>
-                <textarea id="sender-message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+              <div class="form-row">
+                <label for="sender-message" class="academic-label">Message *</label>
+                <textarea id="sender-message" class="academic-textarea" rows="4" placeholder="Please write your inquiry here..." required></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary" id="btn-submit-contact">
-                <span>Send Message</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <button type="submit" class="btn btn-academic" id="btn-submit-contact">
+                ✉️ Send Message
               </button>
             </form>
           </div>
@@ -924,61 +794,48 @@
   </main>
 
   <!-- ==========================================================================
-       FOOTER
+       ACADEMIC FOOTER
        ========================================================================== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="nav-logo">
-          <div class="logo-badge">MS</div>
-          <div class="logo-text">
-            Monpreet Singh
-            <span>IIT Guwahati • Computational Mechanics</span>
-          </div>
-        </div>
-
-        <div class="footer-socials">
-          <a href="https://www.linkedin.com/in/singh5164" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-          </a>
-          <a href="mailto:singhmomnpreet064@gmail.com" class="social-icon-btn" aria-label="Personal Email" title="Email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-          </a>
-          <a href="tel:+919864748082" class="social-icon-btn" aria-label="Phone" title="Call">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          </a>
-        </div>
+  <footer class="academic-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <strong>Monpreet Singh</strong> · Ph.D. Research Scholar<br>
+        Department of Industrial and Systems Engineering<br>
+        Indian Institute of Technology Kharagpur, West Bengal 721302, India
       </div>
 
-      <div class="footer-bottom">
-        <div>
-          © 2026 Monpreet Singh. Designed with precision for Computational Mechanics & Engineering.
+      <div class="footer-right">
+        <div class="footer-nav-links">
+          <a href="#about">About</a> ·
+          <a href="#education">Education</a> ·
+          <a href="#projects">Projects</a> ·
+          <a href="#skills">Skills</a> ·
+          <a href="#honors">Honors</a> ·
+          <a href="#contact">Contact</a>
         </div>
-        <div>
-          <a href="#hero" style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.85rem;">Back to Top ↑</a>
+        <div class="footer-copy">
+          © 2026 Monpreet Singh. Hosted on GitHub Pages (<a href="https://monpreet64.github.io/">monpreet64.github.io</a>).
         </div>
       </div>
     </div>
   </footer>
 
   <!-- ==========================================================================
-       MODAL DIALOG (PROJECT DEEP DIVE)
+       MODAL DIALOG (PROJECT TECHNICAL SUMMARY & CV VIEWER)
        ========================================================================== -->
   <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal-dialog">
       <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">✕</button>
       <div class="modal-content-inner" id="modal-body-content">
-        <!-- Injected via JavaScript -->
+        <!-- Injected dynamically via main.js -->
       </div>
     </div>
   </div>
 
-  <!-- Toast Container -->
+  <!-- Toast Notification Container -->
   <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
-  <!-- Core Scripts -->
-  <script src="js/particles.js"></script>
-  <script src="js/simulator.js"></script>
+  <!-- Core JavaScript -->
   <script src="js/main.js"></script>
 </body>
 </html>
