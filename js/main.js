@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--primary-navy); border-bottom: 1px solid var(--border-color); padding-bottom: 4px; margin-bottom: 12px;">
               HONORS, AWARDS & ACTIVITIES
             </h3>
-            <ul style="font-size: 0.875rem; color: var(--text-secondary); padding-left: 20px; line-height: 1.7;">
+            <ul style="font-size: 0.875rem; color: var(--text-secondary); padding-left: 20px; line-height: 1.7; text-align: justify; text-justify: inter-word; hyphens: auto; -webkit-hyphens: auto;">
               <li><strong>GATE 2026 Qualified:</strong> Direct admission to Ph.D. programme in Industrial and Systems Engineering at IIT Kharagpur.</li>
               <li><strong>GATE 2023 Qualified:</strong> 90 Percentile in Mechanical Engineering.</li>
               <li><strong>National Cyber Olympiad:</strong> 23rd Rank across North East India (Certificate of Excellence).</li>

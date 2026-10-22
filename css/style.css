@@ -1116,7 +1116,18 @@ a:hover {
   vertical-align: top;
   color: var(--text-main);
   line-height: 1.65;
-  text-wrap: pretty;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.academic-table td p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  margin-bottom: 0;
 }
 
 .academic-table tr:last-child td {
