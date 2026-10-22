@@ -1,7 +1,7 @@
 # Monpreet Singh — Academic Portfolio Website
 
 > **Ph.D. Research Scholar | Department of Industrial and Systems Engineering | Indian Institute of Technology (IIT) Kharagpur**  
-> Direct Ph.D. Admission via GATE 2026 (Score: 381) with Bachelor of Engineering (B.E.) Degree.  
+> Direct Ph.D. Admission via GATE 2026.  
 > Supervised by **Prof. Mamata Jenamani** (Supervisor) and **Prof. Jitendra Kumar Jha** (Co-Supervisor).
 
 Personal academic portfolio website showcasing doctoral research background, capstone engineering projects, technical and computational skillsets, and academic credentials.
@@ -18,8 +18,8 @@ Personal academic portfolio website showcasing doctoral research background, cap
 - **Supervisors**:
   - **Supervisor**: Prof. Mamata Jenamani (Professor, Dept. of Industrial and Systems Engineering)
   - **Co-Supervisor**: Prof. Jitendra Kumar Jha (Professor, Dept. of Industrial and Systems Engineering)
-- **Admission**: Direct Ph.D. entry through **GATE 2026** (Score: **381**) with B.E. Degree
-- **Undergraduate Degree**: Bachelor of Engineering (B.E.) in Mechanical Engineering, Assam Engineering College (Score: **80.00%**, First Class with Honours)
+- **Admission Mode**: Direct Ph.D. entry through **GATE 2026**
+- **Undergraduate Degree**: Bachelor of Engineering (B.E.) in Mechanical Engineering, Assam Engineering College (Score: **80.00%**, First Class)
 - **B.E. Capstone Project**: *"Design and Fatigue Failure Analysis of a Leaf Spring using ANSYS"*
 
 ---
@@ -29,7 +29,7 @@ Personal academic portfolio website showcasing doctoral research background, cap
 1. **Design and Fatigue Failure Analysis of a Leaf Spring using ANSYS** *(B.E. Capstone Project)*
    - 3D parametric CAD modeling and finite element static structural analysis in ANSYS Workbench.
    - Evaluated von Mises stress contours, maximum camber deflection, factor of safety, and localized stress concentrations.
-   - Evaluated fatigue life and damage accumulation with the ANSYS Fatigue Tool module using the Stress-Life ($S-N$) approach and Goodman mean stress correction.
+   - Evaluated fatigue life and damage accumulation with the ANSYS Fatigue Tool module using the Stress-Life (S-N) approach and Goodman mean stress correction.
 2. **Function Optimization via Direct and Gradient-Based Search Methods** *(Numerical Algorithms in C)*
    - Engineered standalone numerical search algorithms in pure ANSI C.
    - Implemented Bounding Phase Method for unimodal bracket detection and Bisection Method for gradient root-finding.

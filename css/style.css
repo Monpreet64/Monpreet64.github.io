@@ -2,6 +2,7 @@
    MONPREET SINGH - ACADEMIC PORTFOLIO STYLESHEET
    Ph.D. Scholar | Industrial & Systems Engineering | IIT Kharagpur
    Standard Academic Style: High Readability, Clean Typography, Scholar Palette
+   Refined Line and Paragraph Alignment with Optical Balance
    ========================================================================== */
 
 /* --- GOOGLE FONTS IMPORT --- */
@@ -37,9 +38,9 @@
   --border-navy: #0b3c61;
 
   /* Shadows (Minimal, Academic, Crisp) */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.07);
+  --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.04);
 
   /* Typography */
   --font-serif: 'Newsreader', Georgia, 'Times New Roman', Cambria, serif;
@@ -104,11 +105,22 @@ body {
   font-family: var(--font-sans);
   background-color: var(--bg-page);
   color: var(--text-main);
-  line-height: 1.65;
+  line-height: 1.7;
   font-size: 1rem;
+  letter-spacing: 0.005em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Typography Headings with Balanced Line Breaks */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  color: var(--text-heading);
+}
+
+p, li {
+  text-wrap: pretty;
 }
 
 /* Container */
@@ -167,9 +179,10 @@ a:hover {
 .section-intro {
   font-size: 1.05rem;
   color: var(--text-secondary);
-  max-width: 800px;
+  max-width: 76ch;
   margin-bottom: 36px;
-  line-height: 1.7;
+  line-height: 1.75;
+  text-wrap: pretty;
 }
 
 /* ==========================================================================
@@ -440,8 +453,9 @@ a:hover {
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--text-heading);
-  line-height: 1.2;
+  line-height: 1.25;
   margin-bottom: 4px;
+  text-wrap: balance;
 }
 
 .profile-title {
@@ -454,7 +468,7 @@ a:hover {
 .affiliation-block {
   font-size: 0.9rem;
   color: var(--text-secondary);
-  line-height: 1.45;
+  line-height: 1.5;
   padding-bottom: 16px;
   margin-bottom: 16px;
   border-bottom: 1px solid var(--border-color);
@@ -496,7 +510,7 @@ a:hover {
 
 .supervisor-item {
   font-size: 0.85rem;
-  line-height: 1.4;
+  line-height: 1.45;
   margin-bottom: 4px;
 }
 
@@ -567,7 +581,7 @@ a:hover {
   gap: 10px;
 }
 
-/* Right Bio Content */
+/* Right Bio Content with Perfect Paragraph Alignment */
 .profile-bio-content {
   display: flex;
   flex-direction: column;
@@ -599,13 +613,16 @@ a:hover {
   color: var(--text-heading);
   margin-bottom: 20px;
   line-height: 1.25;
+  text-wrap: balance;
 }
 
 .bio-paragraph {
   font-size: 1.05rem;
   color: var(--text-main);
-  line-height: 1.75;
+  line-height: 1.8;
   margin-bottom: 18px;
+  max-width: 74ch;
+  text-wrap: pretty;
 }
 
 .bio-paragraph strong {
@@ -618,23 +635,24 @@ a:hover {
   color: var(--primary-navy);
 }
 
-/* Quick Academic Stats Table */
+/* Quick Academic Stats Table with Symmetrical Alignment */
 .academic-stats-panel {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  gap: 16px;
   margin: 28px 0;
-  padding: 18px;
+  padding: 20px 22px;
   background-color: var(--bg-alt);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
+  align-items: center;
 }
 
 .stat-card {
   display: flex;
   flex-direction: column;
   border-right: 1px solid var(--border-color);
-  padding-right: 12px;
+  padding-right: 14px;
 }
 
 .stat-card:last-child {
@@ -648,12 +666,14 @@ a:hover {
   font-weight: 700;
   color: var(--primary-navy);
   margin-bottom: 4px;
+  line-height: 1.2;
 }
 
 .stat-caption {
-  font-size: 0.8rem;
+  font-size: 0.825rem;
   color: var(--text-muted);
-  line-height: 1.35;
+  line-height: 1.4;
+  text-wrap: pretty;
 }
 
 /* Callout Box */
@@ -661,9 +681,10 @@ a:hover {
   background-color: var(--bg-highlight);
   border: 1px solid var(--border-color);
   border-left: 4px solid var(--primary-navy);
-  padding: 18px 20px;
+  padding: 18px 22px;
   border-radius: var(--radius-sm);
   margin-top: 10px;
+  max-width: 74ch;
 }
 
 .info-callout-header {
@@ -683,12 +704,13 @@ a:hover {
 .info-callout p {
   font-size: 0.95rem;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.68;
+  text-wrap: pretty;
 }
 
 /* ==========================================================================
    EDUCATION TIMELINE
-   ========================================================================== -->
+   ========================================================================== */
 .academic-timeline {
   display: flex;
   flex-direction: column;
@@ -705,7 +727,7 @@ a:hover {
 
 .timeline-marker {
   position: absolute;
-  top: 4px;
+  top: 6px;
   left: -35px;
   width: 12px;
   height: 12px;
@@ -733,6 +755,8 @@ a:hover {
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--text-heading);
+  line-height: 1.35;
+  text-wrap: balance;
 }
 
 .timeline-period {
@@ -750,21 +774,23 @@ a:hover {
   font-weight: 600;
   color: var(--text-secondary);
   margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 .institution-details {
   font-size: 0.95rem;
   color: var(--text-main);
-  line-height: 1.65;
+  line-height: 1.7;
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 14px 18px;
+  padding: 16px 20px;
   box-shadow: var(--shadow-sm);
 }
 
 .institution-details p {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  text-wrap: pretty;
 }
 
 .institution-details p:last-child {
@@ -806,12 +832,15 @@ a:hover {
   font-weight: 700;
   color: var(--text-heading);
   margin-bottom: 10px;
+  line-height: 1.35;
+  text-wrap: balance;
 }
 
 .research-area-desc {
-  font-size: 0.9rem;
+  font-size: 0.925rem;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.68;
+  text-wrap: pretty;
 }
 
 /* ==========================================================================
@@ -915,29 +944,37 @@ a:hover {
   color: var(--text-heading);
   margin-bottom: 12px;
   line-height: 1.35;
+  text-wrap: balance;
 }
 
 .project-abstract {
   font-size: 0.95rem;
   color: var(--text-main);
-  line-height: 1.65;
+  line-height: 1.75;
   margin-bottom: 16px;
+  max-width: 74ch;
 }
 
 .project-abstract p {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  text-wrap: pretty;
+}
+
+.project-abstract p:last-child {
+  margin-bottom: 0;
 }
 
 .project-key-results {
   background-color: var(--bg-alt);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  padding: 10px 14px;
+  padding: 12px 16px;
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  font-size: 0.85rem;
+  gap: 8px;
+  font-size: 0.875rem;
+  line-height: 1.6;
 }
 
 .result-item {
@@ -948,7 +985,8 @@ a:hover {
 .result-label {
   font-weight: 600;
   color: var(--text-heading);
-  min-width: 140px;
+  min-width: 150px;
+  flex-shrink: 0;
 }
 
 .result-value {
@@ -1004,6 +1042,7 @@ a:hover {
   padding-bottom: 12px;
   margin-bottom: 16px;
   border-bottom: 1px solid var(--border-color);
+  line-height: 1.3;
 }
 
 .skills-card-icon {
@@ -1019,8 +1058,9 @@ a:hover {
 }
 
 .academic-skills-list li {
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--text-secondary);
+  text-wrap: pretty;
 }
 
 .academic-skills-list strong {
@@ -1052,16 +1092,17 @@ a:hover {
   font-family: var(--font-serif);
   font-weight: 700;
   font-size: 1rem;
-  padding: 14px 18px;
+  padding: 16px 20px;
   border-bottom: 2px solid var(--primary-navy);
 }
 
 .academic-table td {
-  padding: 14px 18px;
+  padding: 16px 20px;
   border-bottom: 1px solid var(--border-color);
   vertical-align: top;
   color: var(--text-main);
-  line-height: 1.55;
+  line-height: 1.65;
+  text-wrap: pretty;
 }
 
 .academic-table tr:last-child td {
@@ -1106,8 +1147,9 @@ a:hover {
 .address-entry {
   font-size: 0.95rem;
   color: var(--text-secondary);
-  line-height: 1.7;
+  line-height: 1.75;
   margin-bottom: 24px;
+  text-wrap: pretty;
 }
 
 .address-entry strong {
@@ -1132,6 +1174,7 @@ a:hover {
   min-width: 120px;
   font-weight: 600;
   color: var(--text-heading);
+  flex-shrink: 0;
 }
 
 .c-data {
@@ -1218,7 +1261,8 @@ a:hover {
 }
 
 .footer-left {
-  line-height: 1.6;
+  line-height: 1.65;
+  text-wrap: pretty;
 }
 
 .footer-left strong {
@@ -1277,7 +1321,8 @@ a:hover {
   overflow-y: auto;
   position: relative;
   box-shadow: var(--shadow-md);
-  padding: 36px;
+  padding: 36px 40px;
+  line-height: 1.75;
 }
 
 .modal-close-btn {
